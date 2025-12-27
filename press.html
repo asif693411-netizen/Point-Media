@@ -3,122 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Press — Point Media</title>
-<meta name="description" content="Read about Point Media and Pointika in news articles, interviews, and media features. Stay updated with the latest press coverage.">
 
-<link rel="icon" type="image/png" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Press | Point Media & Pointika</title>
+<meta name="description" content="Latest news and press coverage about Syed Asif Ali, Point Media, and its sub-brand Pointika.">
+
+<link rel="canonical" href="https://pointmedia.link/press.html">
 
 <style>
-:root{
---bg:#0b0d12;--card:#121622;--border:#1f2435;
---text:#e6eaf0;--muted:#9aa4b2;
---brand:#7c9cff;--accent:#2bd4c8;
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f172a;
+  color:#e5e7eb;
+  line-height:1.7;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7}
-a{text-decoration:none;color:inherit}
-.container{max-width:1100px;margin:auto;padding:30px}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#020617;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.5);
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo-wrap{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.logo-wrap img{
+  height:38px;
+}
+.logo-text{
+  font-size:18px;
+  font-weight:bold;
+  color:#60a5fa;
+}
+.menu{
+  display:flex;
+  gap:25px;
+}
+.menu a{
+  color:#e5e7eb;
+  text-decoration:none;
+  font-size:15px;
+}
+.menu a:hover{color:#60a5fa;}
+.menu-btn{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu{
+    position:fixed;
+    top:64px;
+    right:-100%;
+    background:#020617;
+    flex-direction:column;
+    width:240px;
+    padding:20px;
+    height:100vh;
+    transition:0.3s;
+  }
+  .menu.show{right:0;}
+  .menu-btn{display:block;}
+}
 
 /* HEADER */
-header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px}
-.brand strong{font-size:20px;color:var(--brand)}
-nav{display:flex;gap:18px}
-nav a{color:var(--muted);font-weight:500;transition:.3s}
-nav a:hover,.nav a.active{color:var(--brand)}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
-
-/* PRESS CARDS */
-section{padding:80px 0;border-top:1px solid var(--border)}
-h2{font-size:34px;margin-bottom:20px;text-align:center}
-.press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.press-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;transition:.3s}
-.press-card:hover{transform:translateY(-5px);box-shadow:0 0 20px var(--brand)}
-.press-card h3{color:var(--brand);font-size:1.2rem;margin-bottom:10px}
-.press-card p{color:var(--muted);font-size:0.95rem;line-height:1.4}
-.press-card a{color:var(--accent);font-weight:500;display:inline-block;margin-top:8px}
-.press-card a:hover{text-decoration:underline}
-
-/* SOCIAL */
-.social{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:30px}
-.social a{font-size:22px;color:var(--muted);transition:.3s}
-.social a:hover{color:var(--brand)}
-
-footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
-
-@media(max-width:900px){
-nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
-nav.show{display:flex}
-.menu-btn{display:block}
+header{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:140px 20px 80px;
+  text-align:center;
 }
+header img{
+  width:120px;
+  margin-bottom:20px;
+}
+header h1{
+  margin:0;
+  font-size:36px;
+  color:#fff;
+}
+header p{
+  max-width:800px;
+  margin:15px auto 0;
+  color:#cbd5f5;
+  font-size:17px;
+}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2{
+  color:#60a5fa;
+  margin-bottom:20px;
+}
+.card{
+  background:#020617;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom:40px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.grid div{
+  background:#020617;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid #1e293b;
+}
+footer{
+  background:#020617;
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  font-size:14px;
+}
+a{color:#60a5fa;text-decoration:none;}
+a:hover{text-decoration:underline;}
 </style>
+
+<!-- JSON-LD for Press Mentions -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"NewsMediaOrganization",
+  "name":"Point Media",
+  "url":"https://pointmedia.link",
+  "logo":"https://pointmedia.link/logo.png",
+  "founder":{
+    "@type":"Person",
+    "name":"Syed Asif Ali",
+    "url":"https://syedasifali.link",
+    "sameAs":[
+      "https://www.linkedin.com/in/pointmedia",
+      "https://www.instagram.com/boxer_01101",
+      "https://www.crunchbase.com/person/syed-asif-ali"
+    ]
+  },
+  "subOrganization":{
+    "@type":"Organization",
+    "name":"Pointika",
+    "url":"https://pointika.link"
+  },
+  "hasPart":[
+    {
+      "@type":"NewsArticle",
+      "headline":"Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media",
+      "url":"https://techbullion.com/syed-asif-ali-point-media",
+      "datePublished":"2022-06-25",
+      "author":{"@type":"Person","name":"Syed Asif Ali"}
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
-<header>
-<div class="container header-inner">
-  <div class="brand">
-    <img src="logo.png" alt="Point Media Logo">
-    <strong>Point Media</strong>
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Point Media Logo">
+      <div class="logo-text">Point Media</div>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="press.html">Press</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </div>
-  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
-  <nav id="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="founder.html">Founder</a>
-    <a href="press.html" class="active">Press</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</div>
+</nav>
+
+<header>
+  <img src="logo.png" alt="Point Media Logo">
+  <h1>Press & Media</h1>
+  <p>Latest news coverage and press mentions for Syed Asif Ali, Point Media, and Pointika.</p>
 </header>
 
-<section class="container">
-<h2>Press & Media Coverage</h2>
-<div class="press-grid">
-  <div class="press-card">
-    <h3>TechBullion</h3>
-    <p>Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media. Highlighting the company's innovative approach to digital communications.</p>
-    <a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">Read Article</a>
-  </div>
-  <div class="press-card">
-    <h3>Crunchbase</h3>
-    <p>Pointika & Point Media featured on Crunchbase for their digital media growth and founder leadership, establishing credibility in the tech ecosystem.</p>
-    <a href="https://www.crunchbase.com/organization/pointika" target="_blank">View Profile</a>
-  </div>
-  <div class="press-card">
-    <h3>Other Media Features</h3>
-    <p>Additional interviews and features about Syed Asif Ali and Point Media in regional and international publications, emphasizing media influence.</p>
-    <a href="#" target="_blank">Learn More</a>
-  </div>
-</div>
-</section>
+<section>
 
-<section class="container">
-<h2>Connect With Us</h2>
-<div class="social">
-  <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
-  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-  <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-  <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+<div class="card">
+<h2>TechBullion</h2>
+<p><strong>Article:</strong> Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media</p>
+<p><a href="https://techbullion.com/syed-asif-ali-point-media" target="_blank">Read Full Article</a></p>
 </div>
+
+<div class="card">
+<h2>Crunchbase Profile</h2>
+<p>Learn about Syed Asif Ali and his ventures, Point Media and Pointika.</p>
+<p><a href="https://www.crunchbase.com/person/syed-asif-ali" target="_blank">View Profile</a></p>
+</div>
+
+<div class="card">
+<h2>LinkedIn Mentions</h2>
+<p>Follow professional updates and press mentions on LinkedIn.</p>
+<p><a href="https://www.linkedin.com/in/pointmedia" target="_blank">Visit LinkedIn</a></p>
+</div>
+
 </section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+© 2025 Point Media · Founded by Syed Asif Ali  
 </footer>
 
 <script>
 function toggleMenu(){
-  document.getElementById("nav").classList.toggle("show");
+  document.getElementById("menu").classList.toggle("show");
 }
+document.addEventListener("click",function(e){
+  const menu=document.getElementById("menu");
+  const btn=document.querySelector(".menu-btn");
+  if(!menu.contains(e.target)&&!btn.contains(e.target)){
+    menu.classList.remove("show");
+  }
+});
 </script>
 
 </body>

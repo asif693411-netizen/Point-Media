@@ -3,80 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Founder — Point Media</title>
+<title>Founder — Syed Asif Ali | Point Media & Pointika</title>
 <meta name="description" content="Meet Syed Asif Ali, the founder of Point Media and Pointika. Learn about his journey, achievements, and vision for digital media and communications.">
 
 <link rel="icon" type="image/png" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 :root{
---bg:#0b0d12;--card:#121622;--border:#1f2435;
---text:#e6eaf0;--muted:#9aa4b2;
---brand:#7c9cff;--accent:#2bd4c8;
+--bg:#0f172a; --card:#020617; --border:#1e293b;
+--text:#e5e7eb; --muted:#9aa4b2;
+--brand:#60a5fa; --accent:#22d3ee;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7}
-a{text-decoration:none;color:inherit}
-.container{max-width:1100px;margin:auto;padding:30px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#020617;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.5);
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:20px;font-weight:bold;color:var(--brand);}
+.menu{display:flex;gap:25px;}
+.menu a{color:var(--text);font-weight:bold;}
+.menu a:hover{color:var(--brand);}
+.menu-btn{display:none;font-size:22px;cursor:pointer;}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu{
+    position:fixed;
+    top:60px;
+    right:-100%;
+    background:#020617;
+    flex-direction:column;
+    width:240px;
+    padding:20px;
+    height:100vh;
+    transition:0.3s;
+  }
+  .menu.show{right:0;}
+  .menu-btn{display:block;}
+}
 
 /* HEADER */
-header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px}
-.brand strong{font-size:20px;color:var(--brand)}
-nav{display:flex;gap:18px}
-nav a{color:var(--muted);font-weight:500;transition:.3s}
-nav a:hover,.nav a.active{color:var(--brand)}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
+header{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:120px 20px 60px;
+  text-align:center;
+}
+header h1{margin:0;font-size:36px;color:#fff;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
 
 /* SECTIONS */
-section{padding:80px 0;border-top:1px solid var(--border)}
-h2{font-size:34px;margin-bottom:20px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;text-align:center}
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+h2{color:var(--brand);margin-bottom:20px;}
+.card{background:var(--card);padding:30px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.4);margin-bottom:40px;text-align:center;}
 
 /* PROFILE IMAGE */
-.profile-img{width:180px;border-radius:50%;border:3px solid var(--brand);margin-bottom:20px;box-shadow:0 0 20px var(--brand),0 0 40px var(--accent);transition:transform .3s}
-.profile-img:hover{transform:scale(1.05)}
+.profile-img{width:180px;border-radius:50%;border:3px solid var(--brand);margin-bottom:20px;box-shadow:0 0 20px var(--brand),0 0 40px var(--accent);transition:transform .3s;}
+.profile-img:hover{transform:scale(1.05);}
 
 /* SOCIAL */
-.social{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:15px}
-.social a{font-size:22px;color:var(--muted);transition:.3s}
-.social a:hover{color:var(--brand)}
+.social{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:15px;}
+.social a{font-size:22px;color:var(--text);transition:.3s;}
+.social a:hover{color:var(--brand);}
 
-footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
-
-@media(max-width:900px){
-nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
-nav.show{display:flex}
-.menu-btn{display:block}
-}
+footer{text-align:center;padding:30px;background:#020617;color:#9aa4b2;font-size:14px;}
 </style>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Syed Asif Ali",
+  "birthDate":"1997-01-23",
+  "birthPlace":{"@type":"Place","name":"South Waziristan Agency, Pakistan"},
+  "jobTitle":"Founder & Digital Creator",
+  "url":"https://syedasifali.link",
+  "telephone":"+971527157894",
+  "email":"mailto:contact@syedasifali.link",
+  "owns":[
+    {"@type":"Organization","name":"Point Media","url":"https://pointmedia.link"},
+    {"@type":"Organization","name":"Pointika","parentOrganization":"Point Media","url":"https://pointika.link"}
+  ],
+  "knowsAbout":["Digital Branding","Content Creation","Media Visibility","Celebrity Digital Management"],
+  "alumniOf":[{"@type":"Organization","name":"Self-Taught Digital Media Training"}],
+  "hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Professional Digital Media & Branding"}]
+}
+</script>
+
 </head>
 <body>
 
-<header>
-<div class="container header-inner">
-  <div class="brand">
-    <img src="logo.png" alt="Point Media Logo">
-    <strong>Point Media</strong>
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Point Media</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="founder.html" class="active">Founder</a>
+      <a href="press.html">Press</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </div>
-  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
-  <nav id="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="founder.html" class="active">Founder</a>
-    <a href="press.html">Press</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</div>
+</nav>
+
+<header>
+  <h1>Syed Asif Ali</h1>
+  <p>Founder of Point Media & Pointika · Digital Creator · Entrepreneur</p>
 </header>
 
-<section class="container">
-<h2>Founder — Syed Asif Ali</h2>
+<section>
 <div class="card">
 <img src="profile.jpg" alt="Syed Asif Ali" class="profile-img" loading="lazy">
 <p><strong>Syed Asif Ali</strong> is a digital media creator, entrepreneur, and communications professional based in the UAE and Pakistan. He is the founder of <strong>Point Media</strong> and <strong>Pointika</strong>, with expertise in content creation, media visibility, and strategic storytelling.</p>
@@ -91,7 +146,7 @@ nav.show{display:flex}
 </div>
 </section>
 
-<section class="container">
+<section>
 <h2>Connect With Syed Asif Ali</h2>
 <div class="social">
   <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -100,18 +155,25 @@ nav.show{display:flex}
   <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
   <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
   <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.facebook.com/pointmedia" target="_blank"><i class="fab fa-facebook"></i></a>
 </div>
 </section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+© 2025 Point Media · Founded by Syed Asif Ali
 </footer>
 
 <script>
 function toggleMenu(){
-  document.getElementById("nav").classList.toggle("show");
+  document.getElementById("menu").classList.toggle("show");
 }
+document.addEventListener("click",function(e){
+  const menu=document.getElementById("menu");
+  const btn=document.querySelector(".menu-btn");
+  if(!menu.contains(e.target)&&!btn.contains(e.target)){
+    menu.classList.remove("show");
+  }
+});
 </script>
 
 </body>

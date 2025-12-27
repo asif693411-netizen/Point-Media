@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Services | Point Media & Pointika</title>
-<meta name="description" content="Point Media and its sub-brand Pointika offer digital media services, content creation, brand strategy, and online visibility solutions.">
+<meta name="description" content="Explore the digital media and branding services offered by Point Media and its sub-brand Pointika, founded by Syed Asif Ali. Professional social media management, content creation, and media strategy.">
 
 <link rel="canonical" href="https://pointmedia.link/services.html">
 
@@ -31,21 +31,13 @@ nav{
 .nav-container{
   max-width:1200px;
   margin:auto;
-  padding:12px 20px;
+  padding:15px 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
-.logo-wrap{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.logo-wrap img{
-  height:38px;
-}
-.logo-text{
-  font-size:18px;
+.logo{
+  font-size:20px;
   font-weight:bold;
   color:#60a5fa;
 }
@@ -61,7 +53,7 @@ nav{
 .menu a:hover{color:#60a5fa;}
 .menu-btn{
   display:none;
-  font-size:24px;
+  font-size:22px;
   cursor:pointer;
 }
 
@@ -69,7 +61,7 @@ nav{
 @media(max-width:768px){
   .menu{
     position:fixed;
-    top:64px;
+    top:60px;
     right:-100%;
     background:#020617;
     flex-direction:column;
@@ -85,34 +77,18 @@ nav{
 /* HEADER */
 header{
   background:linear-gradient(135deg,#1e3a8a,#0f172a);
-  padding:140px 20px 80px;
+  padding:120px 20px 60px;
   text-align:center;
 }
-header img{
-  width:120px;
-  margin-bottom:20px;
-}
-header h1{
-  margin:0;
-  font-size:36px;
-  color:#fff;
-}
-header p{
-  max-width:800px;
-  margin:15px auto 0;
-  color:#cbd5f5;
-  font-size:17px;
-}
+header h1{margin:0;font-size:36px;color:#fff;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
 
 section{
   max-width:1100px;
   margin:auto;
   padding:60px 20px;
 }
-h2{
-  color:#60a5fa;
-  margin-bottom:20px;
-}
+h2{color:#60a5fa;margin-bottom:20px;}
 .card{
   background:#020617;
   padding:30px;
@@ -120,12 +96,12 @@ h2{
   box-shadow:0 10px 30px rgba(0,0,0,0.4);
   margin-bottom:40px;
 }
-.grid{
+.service-list{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:25px;
 }
-.grid div{
+.service-list div{
   background:#020617;
   padding:25px;
   border-radius:12px;
@@ -142,11 +118,11 @@ a{color:#60a5fa;text-decoration:none;}
 a:hover{text-decoration:underline;}
 </style>
 
-<!-- JSON-LD Organization & Services -->
+<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Organization",
+  "@type":"ProfessionalService",
   "name":"Point Media",
   "url":"https://pointmedia.link",
   "logo":"https://pointmedia.link/logo.png",
@@ -155,28 +131,13 @@ a:hover{text-decoration:underline;}
     "name":"Syed Asif Ali",
     "url":"https://syedasifali.link",
     "sameAs":[
+      "https://www.crunchbase.com/person/syed-asif-ali",
       "https://www.linkedin.com/in/pointmedia",
-      "https://www.instagram.com/boxer_01101",
-      "https://www.crunchbase.com/person/syed-asif-ali"
+      "https://www.instagram.com/boxer_01101"
     ]
   },
-  "department":[
-    {
-      "@type":"Organization",
-      "name":"Pointika",
-      "url":"https://pointika.link"
-    }
-  ],
-  "hasOfferCatalog":{
-    "@type":"OfferCatalog",
-    "name":"Digital Media Services",
-    "itemListElement":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Content Creation"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Social Media Strategy"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brand Management"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Media Visibility & PR"}}
-    ]
-  }
+  "areaServed":"Global",
+  "serviceType":["Digital Branding","Social Media Management","Content Creation","Media Visibility","Influencer Marketing","Strategic Storytelling"]
 }
 </script>
 
@@ -186,13 +147,8 @@ a:hover{text-decoration:underline;}
 <!-- NAV -->
 <nav>
   <div class="nav-container">
-    <div class="logo-wrap">
-      <img src="logo.png" alt="Point Media Logo">
-      <div class="logo-text">Point Media</div>
-    </div>
-
+    <div class="logo">Point Media</div>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -204,31 +160,51 @@ a:hover{text-decoration:underline;}
 </nav>
 
 <header>
-  <img src="logo.png" alt="Point Media Logo">
   <h1>Our Services</h1>
-  <p>Point Media & Pointika deliver digital media solutions for individuals and brands worldwide.</p>
+  <p>Point Media & Pointika offer professional digital media services, helping brands, influencers, and individuals maximize online visibility and engagement.</p>
 </header>
 
 <section>
 
 <div class="card">
-<h2>Content Creation</h2>
-<p>High-quality digital content including video, articles, social posts, and graphics designed to boost brand presence.</p>
+<h2>Core Services</h2>
+<div class="service-list">
+  <div>
+    <h3>Digital Branding</h3>
+    <p>Building and maintaining a credible online identity for individuals and businesses across multiple platforms.</p>
+  </div>
+  <div>
+    <h3>Social Media Management</h3>
+    <p>End-to-end management of social media accounts, content scheduling, and growth strategies.</p>
+  </div>
+  <div>
+    <h3>Content Creation</h3>
+    <p>Professional content production including graphics, videos, and written media for engagement and outreach.</p>
+  </div>
+  <div>
+    <h3>Media Visibility</h3>
+    <p>Strategic exposure in digital platforms, press, and media channels to increase reach and credibility.</p>
+  </div>
+  <div>
+    <h3>Influencer Campaigns</h3>
+    <p>Collaborating with top influencers and managing campaigns that drive brand awareness and engagement.</p>
+  </div>
+  <div>
+    <h3>Strategic Storytelling</h3>
+    <p>Crafting compelling narratives for brands, public figures, and digital campaigns.</p>
+  </div>
+</div>
 </div>
 
 <div class="card">
-<h2>Social Media Strategy</h2>
-<p>Custom social media planning and execution to grow engagement, followers, and online authority.</p>
-</div>
-
-<div class="card">
-<h2>Brand Management</h2>
-<p>Comprehensive brand building, storytelling, and reputation management to create a credible digital image.</p>
-</div>
-
-<div class="card">
-<h2>Media Visibility & PR</h2>
-<p>Strategic media placement, press coverage, and online visibility campaigns to expand brand recognition.</p>
+<h2>Why Choose Us</h2>
+<ul>
+<li>Founder-led team with direct supervision by Syed Asif Ali</li>
+<li>Experience with high-profile clients and top digital campaigns</li>
+<li>Global reach and multi-platform strategies</li>
+<li>Ethical and professional media management</li>
+<li>Proven track record in digital branding and online visibility</li>
+</ul>
 </div>
 
 </section>

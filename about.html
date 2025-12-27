@@ -3,111 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Point Media</title>
-<meta name="description" content="Learn more about Point Media and its founder Syed Asif Ali. Discover our mission, vision, and the story behind our digital media and communications brand.">
 
-<link rel="icon" type="image/png" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>About Syed Asif Ali | Founder of Point Media & Pointika</title>
+
+<meta name="description" content="Syed Asif Ali is a UAE-based digital creator, entrepreneur, and founder of Point Media and Pointika. Learn about his journey from South Waziristan Agency to building global digital brands.">
+
+<link rel="canonical" href="https://pointmedia.example/about.html">
 
 <style>
-:root{
---bg:#0b0d12;--card:#121622;--border:#1f2435;
---text:#e6eaf0;--muted:#9aa4b2;
---brand:#7c9cff;--accent:#2bd4c8;
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f172a;
+  color:#e5e7eb;
+  line-height:1.7;
 }
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7}
-a{text-decoration:none;color:inherit}
-.container{max-width:1100px;margin:auto;padding:30px}
-
-/* HEADER */
-header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px}
-.brand strong{font-size:20px;color:var(--brand)}
-nav{display:flex;gap:18px}
-nav a{color:var(--muted);font-weight:500;transition:.3s}
-nav a:hover,.nav a.active{color:var(--brand)}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
-
-/* SECTIONS */
-section{padding:80px 0;border-top:1px solid var(--border)}
-h2{font-size:34px;margin-bottom:20px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px}
-
-/* SOCIAL */
-.social{display:flex;gap:20px;flex-wrap:wrap;margin-top:15px}
-.social a{font-size:22px;color:var(--muted);transition:.3s}
-.social a:hover{color:var(--brand)}
-
-footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
-
-@media(max-width:900px){
-nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
-nav.show{display:flex}
-.menu-btn{display:block}
+header{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:60px 20px;
+  text-align:center;
 }
+header h1{
+  margin:0;
+  font-size:36px;
+  color:#ffffff;
+}
+header p{
+  max-width:800px;
+  margin:15px auto 0;
+  color:#cbd5f5;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2{
+  color:#60a5fa;
+  margin-bottom:20px;
+}
+.card{
+  background:#020617;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom:40px;
+}
+.brand{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+.brand div{
+  background:#020617;
+  padding:25px;
+  border-radius:12px;
+  border:1px solid #1e293b;
+}
+footer{
+  background:#020617;
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  font-size:14px;
+}
+a{color:#60a5fa;text-decoration:none;}
+a:hover{text-decoration:underline;}
 </style>
+
+<!-- JSON-LD PERSON + ORGANIZATION -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Syed Asif Ali",
+  "alternateName": "Syed Asif Ali Entrepreneur",
+  "birthDate": "1997-01-23",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "South Waziristan Agency, Pakistan"
+  },
+  "jobTitle": "Founder & Digital Creator",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Point Media"
+  },
+  "url": "https://syedasifali.link",
+  "sameAs": [
+    "https://www.linkedin.com",
+    "https://www.crunchbase.com",
+    "https://www.instagram.com/boxer_01101"
+  ],
+  "owns": [
+    {
+      "@type": "Organization",
+      "name": "Point Media",
+      "foundingLocation": "United Arab Emirates"
+    },
+    {
+      "@type": "Organization",
+      "name": "Pointika",
+      "parentOrganization": "Point Media"
+    }
+  ]
+}
+</script>
+
 </head>
+
 <body>
 
 <header>
-<div class="container header-inner">
-  <div class="brand">
-    <img src="logo.png" alt="Point Media Logo">
-    <strong>Point Media</strong>
-  </div>
-  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
-  <nav id="nav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html" class="active">About</a>
-    <a href="founder.html">Founder</a>
-    <a href="press.html">Press</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</div>
+  <h1>Syed Asif Ali</h1>
+  <p>Founder of Point Media & Pointika · Digital Creator · Entrepreneur</p>
 </header>
 
-<section class="container">
-<h2>About Point Media</h2>
-<div class="card">
-<p><strong>Point Media</strong> is a digital media and communications brand founded by <strong>Syed Asif Ali</strong>. Our mission is to create strong online visibility and credible media presence for individuals and organizations.</p>
-<p style="margin-top:15px;">We specialize in:</p>
-<ul>
-<li>Content creation and storytelling</li>
-<li>Media visibility and digital presence</li>
-<li>Brand consulting and strategy</li>
-<li>Public relations and campaigns</li>
-</ul>
-<p style="margin-top:15px;">Based in the United Arab Emirates and Pakistan, Point Media has successfully helped founders, entrepreneurs, and brands grow their online influence and achieve measurable results in digital marketing.</p>
-</div>
-</section>
+<section>
 
-<section class="container">
-<h2>Connect With Us</h2>
-<div class="social">
-  <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
-  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-  <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-  <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-</div>
+  <div class="card">
+    <h2>Early Life & Background</h2>
+
+    <p>
+      Syed Asif Ali was born on <strong>23 January 1997</strong> and originates from
+      <strong>South Waziristan Agency</strong>, a region that for many years has faced
+      instability, limited infrastructure, and a lack of essential resources.
+    </p>
+
+    <p>
+      Growing up in an environment affected by uncertainty and minimal institutional
+      support, access to education, technology, and professional opportunities was
+      extremely limited. There was little to no structured assistance available to
+      guide young individuals toward sustainable career paths.
+    </p>
+
+    <p>
+      Despite these challenges, Syed Asif Ali remained determined to build a better
+      future through self-learning and digital exploration. With limited resources
+      but strong motivation, he gradually developed expertise in digital media,
+      online communication, and content strategy.
+    </p>
+
+    <p>
+      His journey represents resilience, adaptability, and the belief that ethical
+      use of digital platforms can help individuals overcome difficult beginnings
+      and create global opportunities.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Professional Journey</h2>
+    <p>
+      Syed Asif Ali is a UAE-based digital creator and communications professional,
+      specializing in online presence building, media visibility, and strategic
+      storytelling for individuals and organizations.
+    </p>
+    <p>
+      His work focuses on credibility building, digital reputation management,
+      and ethical content development across global platforms.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Brands & Ventures</h2>
+
+    <div class="brand">
+      <div>
+        <h3>Point Media</h3>
+        <p>
+          Point Media is a digital communications and media brand founded by
+          Syed Asif Ali. It focuses on content strategy, digital branding,
+          and online visibility for individuals and organizations.
+        </p>
+      </div>
+
+      <div>
+        <h3>Pointika <small>(Sub-Brand)</small></h3>
+        <p>
+          Pointika operates as a sub-brand of Point Media, dedicated to digital
+          media publishing, storytelling, and building credible online identities
+          across global platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+  © 2025 Point Media · Founded by Syed Asif Ali  
+  <br>
+  <a href="https://syedasifali.link">syedasifali.link</a>
 </footer>
-
-<script>
-function toggleMenu(){
-  document.getElementById("nav").classList.toggle("show");
-}
-</script>
 
 </body>
 </html>

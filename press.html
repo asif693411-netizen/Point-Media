@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Press | Point Media & Pointika</title>
-<meta name="description" content="Latest news and press coverage about Syed Asif Ali, Point Media, and its sub-brand Pointika.">
+<title>Press & Media Coverage | Point Media & Pointika</title>
+<meta name="description" content="Point Media and Pointika featured in digital media news and articles. Founder Syed Asif Ali shares insights on branding, digital storytelling, and media visibility.">
 
 <link rel="canonical" href="https://pointmedia.link/press.html">
 
@@ -31,21 +31,13 @@ nav{
 .nav-container{
   max-width:1200px;
   margin:auto;
-  padding:12px 20px;
+  padding:15px 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
-.logo-wrap{
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-.logo-wrap img{
-  height:38px;
-}
-.logo-text{
-  font-size:18px;
+.logo{
+  font-size:20px;
   font-weight:bold;
   color:#60a5fa;
 }
@@ -61,7 +53,7 @@ nav{
 .menu a:hover{color:#60a5fa;}
 .menu-btn{
   display:none;
-  font-size:24px;
+  font-size:22px;
   cursor:pointer;
 }
 
@@ -69,7 +61,7 @@ nav{
 @media(max-width:768px){
   .menu{
     position:fixed;
-    top:64px;
+    top:60px;
     right:-100%;
     background:#020617;
     flex-direction:column;
@@ -85,34 +77,18 @@ nav{
 /* HEADER */
 header{
   background:linear-gradient(135deg,#1e3a8a,#0f172a);
-  padding:140px 20px 80px;
+  padding:120px 20px 60px;
   text-align:center;
 }
-header img{
-  width:120px;
-  margin-bottom:20px;
-}
-header h1{
-  margin:0;
-  font-size:36px;
-  color:#fff;
-}
-header p{
-  max-width:800px;
-  margin:15px auto 0;
-  color:#cbd5f5;
-  font-size:17px;
-}
+header h1{margin:0;font-size:36px;color:#fff;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
 
 section{
   max-width:1100px;
   margin:auto;
   padding:60px 20px;
 }
-h2{
-  color:#60a5fa;
-  margin-bottom:20px;
-}
+h2{color:#60a5fa;margin-bottom:20px;}
 .card{
   background:#020617;
   padding:30px;
@@ -120,17 +96,22 @@ h2{
   box-shadow:0 10px 30px rgba(0,0,0,0.4);
   margin-bottom:40px;
 }
-.grid{
+.press-list{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:25px;
 }
-.grid div{
+.press-list div{
   background:#020617;
   padding:25px;
   border-radius:12px;
   border:1px solid #1e293b;
 }
+.press-list div a{
+  color:#60a5fa;
+  font-weight:bold;
+}
+.press-list div a:hover{text-decoration:underline;}
 footer{
   background:#020617;
   text-align:center;
@@ -138,15 +119,13 @@ footer{
   color:#94a3b8;
   font-size:14px;
 }
-a{color:#60a5fa;text-decoration:none;}
-a:hover{text-decoration:underline;}
 </style>
 
-<!-- JSON-LD for Press Mentions -->
+<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"NewsMediaOrganization",
+  "@type":"Organization",
   "name":"Point Media",
   "url":"https://pointmedia.link",
   "logo":"https://pointmedia.link/logo.png",
@@ -155,25 +134,13 @@ a:hover{text-decoration:underline;}
     "name":"Syed Asif Ali",
     "url":"https://syedasifali.link",
     "sameAs":[
+      "https://www.crunchbase.com/person/syed-asif-ali",
       "https://www.linkedin.com/in/pointmedia",
-      "https://www.instagram.com/boxer_01101",
-      "https://www.crunchbase.com/person/syed-asif-ali"
+      "https://www.instagram.com/boxer_01101"
     ]
   },
-  "subOrganization":{
-    "@type":"Organization",
-    "name":"Pointika",
-    "url":"https://pointika.link"
-  },
-  "hasPart":[
-    {
-      "@type":"NewsArticle",
-      "headline":"Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media",
-      "url":"https://techbullion.com/syed-asif-ali-point-media",
-      "datePublished":"2022-06-25",
-      "author":{"@type":"Person","name":"Syed Asif Ali"}
-    }
-  ]
+  "sameAs":["https://pointika.link"],
+  "description":"Point Media and Pointika featured in media news, highlighting their expertise in digital branding, social media management, and online storytelling."
 }
 </script>
 
@@ -183,13 +150,8 @@ a:hover{text-decoration:underline;}
 <!-- NAV -->
 <nav>
   <div class="nav-container">
-    <div class="logo-wrap">
-      <img src="logo.png" alt="Point Media Logo">
-      <div class="logo-text">Point Media</div>
-    </div>
-
+    <div class="logo">Point Media</div>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -201,29 +163,38 @@ a:hover{text-decoration:underline;}
 </nav>
 
 <header>
-  <img src="logo.png" alt="Point Media Logo">
-  <h1>Press & Media</h1>
-  <p>Latest news coverage and press mentions for Syed Asif Ali, Point Media, and Pointika.</p>
+  <h1>Press & Media Coverage</h1>
+  <p>Point Media and its sub-brand Pointika are recognized in digital media, press articles, and online news for excellence in branding, content, and strategic storytelling.</p>
 </header>
 
 <section>
 
 <div class="card">
-<h2>TechBullion</h2>
-<p><strong>Article:</strong> Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media</p>
-<p><a href="https://techbullion.com/syed-asif-ali-point-media" target="_blank">Read Full Article</a></p>
+<h2>Featured News</h2>
+<div class="press-list">
+  <div>
+    <a href="https://techbullion.com/syed-asif-ali-founder-point-media/" target="_blank">TechBullion — Syed Asif Ali: Founder of Fastest Growing Digital Media Company</a>
+    <p>Insights into Point Media’s innovative digital campaigns and storytelling strategies.</p>
+  </div>
+  <div>
+    <a href="https://www.linkedin.com/pulse/digital-media-strategy-syed-asif-ali/" target="_blank">LinkedIn Article — Digital Media Strategy by Syed Asif Ali</a>
+    <p>Professional advice on managing online presence for celebrities and brands.</p>
+  </div>
+  <div>
+    <a href="https://medium.com/@asif693411" target="_blank">Medium — Pointika Digital Stories</a>
+    <p>Pointika’s sub-brand showcasing creative content and digital campaigns.</p>
+  </div>
+</div>
 </div>
 
 <div class="card">
-<h2>Crunchbase Profile</h2>
-<p>Learn about Syed Asif Ali and his ventures, Point Media and Pointika.</p>
-<p><a href="https://www.crunchbase.com/person/syed-asif-ali" target="_blank">View Profile</a></p>
-</div>
-
-<div class="card">
-<h2>LinkedIn Mentions</h2>
-<p>Follow professional updates and press mentions on LinkedIn.</p>
-<p><a href="https://www.linkedin.com/in/pointmedia" target="_blank">Visit LinkedIn</a></p>
+<h2>Media Highlights</h2>
+<ul>
+<li>Coverage of campaigns managed for high-profile personalities and top influencers</li>
+<li>Recognition for ethical digital brand management</li>
+<li>Featured in UAE & international news platforms</li>
+<li>Interviews and insights shared by founder Syed Asif Ali</li>
+</ul>
 </div>
 
 </section>

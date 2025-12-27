@@ -3,61 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Point Media & Pointika</title>
-<meta name="description" content="Get in touch with Syed Asif Ali, Founder of Point Media & Pointika. Reach out via email, phone, or social platforms.">
+<title>Contact Syed Asif Ali | Point Media & Pointika</title>
+<meta name="description" content="Connect with Syed Asif Ali, founder of Point Media and Pointika. Reach out via social media, email, or phone for digital media inquiries.">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="canonical" href="https://pointmedia.example/contact.html">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#0f172a;
+  color:#e5e7eb;
+  line-height:1.7;
+}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#020617;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.5);
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:20px;
+  font-weight:bold;
+  color:#60a5fa;
+}
+.menu{
+  display:flex;
+  gap:25px;
+}
+.menu a{
+  color:#e5e7eb;
+  text-decoration:none;
+  font-size:15px;
+}
+.menu a:hover{color:#60a5fa;}
+.menu-btn{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu{
+    position:fixed;
+    top:60px;
+    right:-100%;
+    background:#020617;
+    flex-direction:column;
+    width:240px;
+    padding:20px;
+    height:100vh;
+    transition:0.3s;
+  }
+  .menu.show{right:0;}
+  .menu-btn{display:block;}
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#1e3a8a,#0f172a);
+  padding:120px 20px 60px;
+  text-align:center;
+}
+header h1{margin:0;font-size:36px;color:#fff;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2{color:#60a5fa;margin-bottom:20px;}
+.card{
+  background:#020617;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  margin-bottom:40px;
+}
+.social-links{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.social-links a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:15px 20px;
+  background:#121826;
+  border-radius:12px;
+  border:1px solid #1e293b;
+  text-decoration:none;
+  color:#60a5fa;
+  font-weight:bold;
+  transition:0.3s;
+}
+.social-links a:hover{
+  background:#1e293b;
+  transform:translateY(-3px);
+}
+.social-links img{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+}
+footer{
+  background:#020617;
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  font-size:14px;
+}
+</style>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Point Media",
-  "alternateName":"Pointika",
-  "url":"https://pointmedia.link",
-  "logo":"https://pointmedia.link/logo.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Syed Asif Ali",
-    "url":"https://syedasifali.link",
-    "sameAs":[
-      "https://www.crunchbase.com/person/syed-asif-ali",
-      "https://www.linkedin.com/in/pointmedia",
-      "https://www.instagram.com/boxer_01101"
-    ]
-  },
+  "@type":"Person",
+  "name":"Syed Asif Ali",
+  "birthDate":"1997-01-23",
+  "birthPlace":{"@type":"Place","name":"South Waziristan Agency, Pakistan"},
+  "jobTitle":"Founder & Digital Creator",
+  "url":"https://syedasifali.link",
+  "telephone":"+971527157894",
+  "email":"mailto:contact@syedasifali.link",
   "sameAs":[
-    "https://www.crunchbase.com/organization/pointika",
-    "https://pointika.link"
+    "https://www.linkedin.com/in/pointmedia",
+    "https://www.instagram.com/boxer_01101",
+    "https://x.com/Boxer_01101",
+    "https://www.youtube.com/@AsifAli-Digital",
+    "https://www.tiktok.com/@pointika.media",
+    "https://medium.com/@asif693411",
+    "https://www.facebook.com/pointmedia"
   ]
 }
 </script>
 
-<style>
-body{margin:0;font-family:Arial;background:#0f172a;color:#e5e7eb;line-height:1.7}
-nav{position:fixed;top:0;left:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5);}
-.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:20px;font-weight:bold;color:#60a5fa;}
-.menu{display:flex;gap:25px;}
-.menu a{color:#e5e7eb;text-decoration:none;font-size:15px;}
-.menu a:hover{color:#60a5fa;}
-.menu-btn{display:none;font-size:22px;cursor:pointer;}
-@media(max-width:768px){.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:0.3s;}.menu.show{right:0;}.menu-btn{display:block;}}
-header{background:linear-gradient(135deg,#1e3a8a,#0f172a);padding:120px 20px 60px;text-align:center;}
-header h1{margin:0;font-size:36px;color:#fff;}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
-section{max-width:1100px;margin:auto;padding:60px 20px;}
-h2{color:#60a5fa;margin-bottom:20px;}
-.card{background:#020617;padding:30px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,0.4);margin-bottom:40px;}
-.social-links a{display:inline-block;margin:6px;padding:10px 20px;border-radius:25px;background-color:#111;color:#60a5fa;text-decoration:none;font-weight:500;transition:all .3s ease;}
-.social-links a:hover{background-color:#60a5fa;color:#111;transform:translateY(-3px);}
-footer{background:#020617;text-align:center;padding:30px;color:#94a3b8;font-size:14px;}
-</style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
   <div class="nav-container">
     <div class="logo">Point Media</div>
@@ -67,42 +168,46 @@ footer{background:#020617;text-align:center;padding:30px;color:#94a3b8;font-size
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="press.html">Press</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
 <header>
-  <h1>Contact Point Media & Pointika</h1>
-  <p>Reach out to Syed Asif Ali, Founder & Digital Creator, via any of the following channels.</p>
+  <h1>Contact Syed Asif Ali</h1>
+  <p>Founder of Point Media & Pointika · Digital Creator · Entrepreneur</p>
 </header>
 
 <section>
+  <div class="card">
+    <h2>Get In Touch</h2>
+    <p>You can reach Syed Asif Ali via phone, email, or social media for digital media inquiries, collaborations, or media partnerships.</p>
+  </div>
 
-<div class="card">
-<h2>Email & Phone</h2>
-<p><strong>Email:</strong> info@pointmedia.link</p>
-<p><strong>Phone:</strong> +971 52 715 7894</p>
-<p><strong>Personal Website:</strong> <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
-</div>
+  <div class="card">
+    <h2>Other Contact Info</h2>
+    <p><strong>Phone:</strong> +971 52 715 7894</p>
+    <p><strong>Email:</strong> <a href="mailto:contact@syedasifali.link">contact@syedasifali.link</a></p>
+    <p><strong>Personal Website:</strong> <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
+  </div>
 
-<div class="card">
-<h2>Social Platforms</h2>
-<div class="social-links">
-<a href="https://www.instagram.com/boxer_01101" target="_blank">Instagram</a>
-<a href="https://www.tiktok.com/@pointika.media" target="_blank">TikTok</a>
-<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank">YouTube</a>
-<a href="https://medium.com/@asif693411" target="_blank">Medium</a>
-<a href="https://www.linkedin.com/in/pointmedia" target="_blank">LinkedIn</a>
-<a href="https://x.com/Boxer_01101" target="_blank">X / Twitter</a>
-<a href="https://www.facebook.com/" target="_blank">Facebook</a>
-</div>
-</div>
+  <div class="card">
+    <h2>Social Media Profiles</h2>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn</a>
+      <a href="https://www.instagram.com/boxer_01101" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram</a>
+      <a href="https://x.com/Boxer_01101" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X/Twitter"> X / Twitter</a>
+      <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube</a>
+      <a href="https://www.tiktok.com/@pointika.media" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok"> TikTok</a>
+      <a href="https://medium.com/@asif693411" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111505.png" alt="Medium"> Medium</a>
+      <a href="https://www.facebook.com/pointmedia" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook</a>
+    </div>
+  </div>
 
 </section>
 
 <footer>
-© 2025 Point Media · Founded by Syed Asif Ali
+© 2025 Point Media · Founded by Syed Asif Ali  
 </footer>
 
 <script>

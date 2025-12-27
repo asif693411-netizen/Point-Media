@@ -3,77 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — Point Media & Pointika</title>
-<meta name="description" content="Point Media & Pointika services include media & PR, content strategy, and digital visibility growth.">
-<link rel="icon" href="logo.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Services — Point Media</title>
+<meta name="description" content="Discover the professional services offered by Point Media, founded by Syed Asif Ali, focusing on media, content strategy, and visibility growth.">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Point Media",
-  "url": "https://pointmedia.link",
-  "logo": "https://pointmedia.link/logo.png",
-  "founder": {
-    "@type": "Person",
-    "name": "Syed Asif Ali",
-    "url": "https://syedasifali.link"
-  },
-  "subOrganization": {
-    "@type": "Organization",
-    "name": "Pointika",
-    "url": "https://pointika.link"
-  }
-}
-</script>
-
 <style>
-:root{--bg:#0b0d12;--card:#121622;--border:#1f2435;--text:#e6eaf0;--muted:#9aa4b2;--brand:#7c9cff;--accent:#2bd4c8;}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter}
+:root{
+--bg:#0b0d12;--card:#121622;--border:#1f2435;
+--text:#e6eaf0;--muted:#9aa4b2;
+--brand:#7c9cff;--accent:#2bd4c8;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{background:var(--bg);color:var(--text);line-height:1.7}
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:auto;padding:30px}
-/* Header */
+
+/* HEADER */
 header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{height:42px}
 .brand strong{font-size:20px;color:var(--brand)}
 nav{display:flex;gap:18px}
-nav a{color:var(--muted);font-weight:500}
-nav a:hover{color:var(--brand)}
+nav a{color:var(--muted);font-weight:500;transition:.3s}
+nav a:hover,.nav a.active{color:var(--brand)}
 .menu-btn{display:none;font-size:22px;cursor:pointer}
-/* Sections */
+
+/* SECTIONS */
 section{padding:80px 0;border-top:1px solid var(--border)}
 h2{font-size:34px;margin-bottom:20px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px}
-/* SERVICES */
+
+/* SERVICES GRID */
 .grid{display:grid;gap:24px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .service{text-align:center;padding:25px;border-radius:18px;background:#14182a;border:1px solid var(--border)}
 .service i{font-size:28px;color:var(--brand);margin-bottom:10px}
+
 /* SOCIAL */
 .social{display:flex;gap:20px;flex-wrap:wrap;margin-top:15px}
-.social a{font-size:22px;color:var(--muted)}
+.social a{font-size:22px;color:var(--muted);transition:.3s}
 .social a:hover{color:var(--brand)}
+
 footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
-.overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);display:none;z-index:800}
-@media(max-width:900px){nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}nav.show{display:flex}.grid-3{grid-template-columns:1fr}.menu-btn{display:block}}
+
+@media(max-width:900px){
+nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
+nav.show{display:flex}
+.menu-btn{display:block}
+.grid-3{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
+
 <header>
 <div class="container header-inner">
   <div class="brand">
     <img src="logo.png" alt="Point Media Logo">
     <strong>Point Media</strong>
   </div>
-  <i class="fas fa-bars menu-btn" id="menu-btn"></i>
+  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="services.html" class="active">Services</a>
+    <a href="about.html">About</a>
     <a href="founder.html">Founder</a>
     <a href="press.html">Press</a>
     <a href="contact.html">Contact</a>
@@ -84,50 +81,54 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
 <section class="container">
 <h2>Our Services</h2>
 <div class="grid grid-3">
-<div class="service"><i class="fa-solid fa-bullhorn"></i><h4>Media & PR</h4><p>Editorial features, media outreach & online credibility.</p></div>
-<div class="service"><i class="fa-solid fa-pen-nib"></i><h4>Content Strategy</h4><p>Brand stories, founder profiles & storytelling campaigns.</p></div>
-<div class="service"><i class="fa-solid fa-chart-line"></i><h4>Visibility Growth</h4><p>Search optimization, digital visibility, and audience growth.</p></div>
+  <div class="service">
+    <i class="fa-solid fa-bullhorn"></i>
+    <h4>Media & PR</h4>
+    <p>Editorial features, press releases, and boosting online credibility for brands and founders.</p>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-pen-nib"></i>
+    <h4>Content Strategy</h4>
+    <p>Creating compelling brand stories, founder profiles, and content planning for maximum engagement.</p>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-chart-line"></i>
+    <h4>Visibility Growth</h4>
+    <p>Search engine optimization, digital presence management, and strategic social media amplification.</p>
+  </div>
 </div>
 </section>
 
 <section class="container">
-<h2>Connect</h2>
-<div class="social">
-<a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@syed_asif_ali34" target="_blank"><i class="fab fa-tiktok"></i></a>
-<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-<a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-<a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-<a href="https://www.facebook.com/share/1DokMS7GB9/" target="_blank"><i class="fab fa-facebook"></i></a>
+<h2>Other Services</h2>
+<div class="grid grid-3">
+  <div class="service">
+    <i class="fa-solid fa-bullseye"></i>
+    <h4>Brand Consulting</h4>
+    <p>Expert guidance to build, scale, and sustain a strong digital and media presence.</p>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-video"></i>
+    <h4>Video & Media Production</h4>
+    <p>Professional video content, interviews, and media campaigns for social and online platforms.</p>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-globe"></i>
+    <h4>Digital Campaigns</h4>
+    <p>Targeted online campaigns, brand awareness, and marketing strategies for global reach.</p>
+  </div>
 </div>
 </section>
 
 <footer>
-© 2025 Point Media & Pointika · Digital Media & Communications
+© 2025 Point Media · Digital Media & Communications
 </footer>
 
 <script>
-const menuBtn=document.getElementById('menu-btn');
-const nav=document.getElementById('nav');
-const overlay=document.createElement('div');
-overlay.id='overlay';
-document.body.appendChild(overlay);
-
-menuBtn.addEventListener('click',()=>{
-  nav.classList.toggle('show');
-  overlay.classList.toggle('show');
-});
-overlay.addEventListener('click',()=>{
-  nav.classList.remove('show');
-  overlay.classList.remove('show');
-});
-document.querySelectorAll('#nav a').forEach(link=>{
-  link.addEventListener('click',()=>{
-    nav.classList.remove('show');
-    overlay.classList.remove('show');
-  });
-});
+function toggleMenu(){
+  document.getElementById("nav").classList.toggle("show");
+}
 </script>
+
 </body>
 </html>

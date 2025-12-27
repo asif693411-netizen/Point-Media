@@ -3,44 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Point Media — Digital Media & Communications</title>
-<meta name="description" content="Point Media is a digital media and communications agency led by Syed Asif Ali, focused on building strong online presence, media visibility, and strategic storytelling.">
+<title>Point Media & Pointika — Digital Media & Communications</title>
+<meta name="description" content="Point Media & Pointika are digital media and communications brands founded by Syed Asif Ali, focused on content visibility, strategic storytelling, and online credibility.">
+<link rel="icon" href="logo.png" type="image/png">
 
-<link rel="icon" type="image/png" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- JSON-LD Structured Data for Knowledge Panel -->
+<!-- Structured Data -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Point Media",
-  "url":"https://pointmedia.link",
-  "logo":"https://pointmedia.link/logo.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Syed Asif Ali",
-    "url":"https://syedasifali.link"
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Point Media",
+  "url": "https://pointmedia.link",
+  "logo": "https://pointmedia.link/logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Syed Asif Ali",
+    "url": "https://syedasifali.link"
   },
-  "subOrganization":[
-    {
-      "@type":"Organization",
-      "name":"Pointika",
-      "url":"https://pointika.link",
-      "logo":"https://pointika.link/logo.png"
-    }
-  ],
-  "sameAs":[
-    "https://www.crunchbase.com/organization/pointmedia",
-    "https://www.linkedin.com/in/pointmedia",
+  "sameAs": [
+    "https://www.crunchbase.com/organization/pointika",
     "https://www.instagram.com/boxer_01101",
-    "https://www.tiktok.com/@pointika.media",
+    "https://www.tiktok.com/@syed_asif_ali34",
     "https://www.youtube.com/@AsifAli-Digital",
+    "https://www.linkedin.com/in/pointmedia",
     "https://x.com/Boxer_01101",
     "https://medium.com/@asif693411",
     "https://www.facebook.com/share/1DokMS7GB9/"
-  ]
+  ],
+  "subOrganization": {
+    "@type": "Organization",
+    "name": "Pointika",
+    "url": "https://pointika.link"
+  }
 }
 </script>
 
@@ -67,7 +64,7 @@ nav a:hover{color:var(--brand)}
 .menu-btn{display:none;font-size:22px;cursor:pointer}
 
 /* HERO */
-.hero{text-align:center;padding:100px 20px;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('hero-bg.jpg') center/cover no-repeat}
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6))}
 .hero h1{font-size:46px;font-weight:800}
 .hero p{max-width:720px;margin:15px auto;color:#c7cfdb}
 .badge{margin-top:18px;display:inline-block;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#000;font-weight:700}
@@ -83,15 +80,10 @@ h2{font-size:34px;margin-bottom:20px}
 .service{text-align:center;padding:25px;border-radius:18px;background:#14182a;border:1px solid var(--border)}
 .service i{font-size:28px;color:var(--brand);margin-bottom:10px}
 
-/* PRESS */
-.press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:20px}
-.press-item{background:#14182a;padding:20px;border-radius:15px;border:1px solid var(--border)}
-.press-item a{color:var(--brand);font-weight:600}
-.press-item p{color:var(--muted);margin-top:10px;font-size:0.95rem}
-
-/* FOUNDER */
-.founder-card{display:flex;gap:20px;align-items:center;background:var(--card);padding:25px;border-radius:20px;border:1px solid var(--border)}
-.founder-card img{width:150px;border-radius:50%;border:3px solid var(--brand)}
+/* Q&A */
+.accordion{cursor:pointer;padding:18px;border-radius:16px;background:var(--card);border:1px solid var(--border);margin-bottom:10px}
+.accordion.active{background:#1e2230}
+.panel{display:none;padding:15px 20px;color:var(--muted)}
 
 /* SOCIAL */
 .social{display:flex;gap:20px;flex-wrap:wrap;margin-top:15px}
@@ -100,6 +92,18 @@ h2{font-size:34px;margin-bottom:20px}
 
 footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
 
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.6);
+  display:none;
+  z-index:800;
+}
+
+/* MEDIA */
 @media(max-width:900px){
 nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
 nav.show{display:flex}
@@ -109,39 +113,38 @@ nav.show{display:flex}
 }
 </style>
 </head>
-
 <body>
-
 <header>
 <div class="container header-inner">
   <div class="brand">
     <img src="logo.png" alt="Point Media Logo">
     <strong>Point Media</strong>
   </div>
-  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+  <i class="fas fa-bars menu-btn" id="menu-btn"></i>
   <nav id="nav">
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#founder">Founder</a>
-    <a href="#press">Press</a>
+    <a href="#qa">Q&A</a>
     <a href="#contact">Contact</a>
   </nav>
 </div>
 </header>
 
 <section class="hero">
-<h1>Empowering Brands.<br>Building Digital Presence.</h1>
-<p>Point Media — Founder-led digital media & communications brand, with Pointika as a sub-brand.</p>
+<h1>Build Visibility.<br>Shape Digital Presence.</h1>
+<p>Point Media & Pointika — founder-led digital media & communications brands.</p>
 <div class="badge">Founded by Syed Asif Ali</div>
 </section>
 
 <section id="about" class="container">
-<h2>About Point Media</h2>
+<h2>About</h2>
 <div class="card">
-<p><strong>Point Media</strong> is a full-service digital media and communications brand led by Syed Asif Ali, specializing in content visibility, strategic storytelling, and online credibility for individuals and brands.</p>
+<p><strong>Point Media</strong> is a digital media & communications brand focused on content visibility, strategic storytelling, and credible online presence for individuals & brands.</p>
 <p style="margin-top:10px">
-Official Website: <a href="https://pointmedia.link" target="_blank">pointmedia.link</a><br>
-Pointika Sub-Brand: <a href="https://pointika.link" target="_blank">pointika.link</a>
+Pointika (Sub-brand): <a href="https://pointika.link" target="_blank">pointika.link</a><br>
+Founder Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a><br>
+Crunchbase: <a href="https://www.crunchbase.com/organization/pointika" target="_blank">View Profile</a>
 </p>
 </div>
 </section>
@@ -157,49 +160,79 @@ Pointika Sub-Brand: <a href="https://pointika.link" target="_blank">pointika.lin
 
 <section id="founder" class="container">
 <h2>Founder</h2>
-<div class="founder-card">
-<img src="founder.jpg" alt="Syed Asif Ali">
-<div>
-<h3>Syed Asif Ali</h3>
-<p>Entrepreneur & Digital Creator — Founder of Point Media and Pointika. Focused on media visibility, content creation, and building strong online presence for brands.</p>
-<a href="https://syedasifali.link" target="_blank" style="color:var(--brand)">Visit Founder Website</a>
-</div>
+<div class="card">
+<p><strong>Syed Asif Ali</strong> — Digital Creator & Entrepreneur, Founder of Point Media & Pointika.</p>
 </div>
 </section>
 
-<section id="press" class="container">
-<h2>Press & Articles</h2>
-<div class="press-grid">
-<div class="press-item">
-<a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">TechBullion — Syed Asif Ali</a>
-<p>Founder of Point Media featured in top digital media coverage for strategic storytelling and content visibility.</p>
-</div>
-<!-- Add more press items as needed -->
-</div>
+<section id="qa" class="container">
+<h2>Questions & Answers</h2>
+
+<div class="accordion">Who is Syed Asif Ali?</div>
+<div class="panel">Founder of Point Media & Pointika, digital media entrepreneur.</div>
+
+<div class="accordion">What is Point Media?</div>
+<div class="panel">A leading digital media & communications brand helping individuals & businesses grow online.</div>
+
+<div class="accordion">What is Pointika?</div>
+<div class="panel">A sub-brand of Point Media focused on digital storytelling & visibility.</div>
 </section>
 
 <section id="contact" class="container">
 <h2>Connect</h2>
+<div class="card">
 <div class="social">
 <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.tiktok.com/@syed_asif_ali34" target="_blank"><i class="fab fa-tiktok"></i></a>
 <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
 <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
 <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
 <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
 <a href="https://www.facebook.com/share/1DokMS7GB9/" target="_blank"><i class="fab fa-facebook"></i></a>
 </div>
+
+<p style="margin-top:15px">Email: <strong>info@syedasifali.link</strong></p>
+</div>
 </section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+© 2025 Point Media & Pointika · Digital Media & Communications
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("nav").classList.toggle("show");
-}
-</script>
+// Menu toggle
+const menuBtnElem = document.getElementById('menu-btn');
+const navElem = document.getElementById('nav');
+const overlay = document.createElement('div');
+overlay.id = 'overlay';
+document.body.appendChild(overlay);
 
+menuBtnElem.addEventListener('click', () => {
+  navElem.classList.toggle('show');
+  overlay.classList.toggle('show');
+});
+
+overlay.addEventListener('click', () => {
+  navElem.classList.remove('show');
+  overlay.classList.remove('show');
+});
+
+// Hide menu on nav link click
+document.querySelectorAll('#nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    navElem.classList.remove('show');
+    overlay.classList.remove('show');
+  });
+});
+
+// Accordion
+document.querySelectorAll(".accordion").forEach(a=>{
+  a.addEventListener("click",()=>{
+    a.classList.toggle("active");
+    const p=a.nextElementSibling;
+    p.style.display=p.style.display==="block"?"none":"block";
+  });
+});
+</script>
 </body>
 </html>

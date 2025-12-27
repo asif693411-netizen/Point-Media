@@ -4,68 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Press — Point Media</title>
-<meta name="description" content="Read the latest news, articles, and media coverage about Syed Asif Ali and Point Media.">
+<meta name="description" content="Read about Point Media and Pointika in news articles, interviews, and media features. Stay updated with the latest press coverage.">
 
-<link rel="icon" type="image/png" href="assets/images/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+--bg:#0b0d12;--card:#121622;--border:#1f2435;
+--text:#e6eaf0;--muted:#9aa4b2;
+--brand:#7c9cff;--accent:#2bd4c8;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:var(--bg);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:auto;padding:30px}
+
+/* HEADER */
+header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:42px}
+.brand strong{font-size:20px;color:var(--brand)}
+nav{display:flex;gap:18px}
+nav a{color:var(--muted);font-weight:500;transition:.3s}
+nav a:hover,.nav a.active{color:var(--brand)}
+.menu-btn{display:none;font-size:22px;cursor:pointer}
+
+/* PRESS CARDS */
+section{padding:80px 0;border-top:1px solid var(--border)}
+h2{font-size:34px;margin-bottom:20px;text-align:center}
+.press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.press-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;transition:.3s}
+.press-card:hover{transform:translateY(-5px);box-shadow:0 0 20px var(--brand)}
+.press-card h3{color:var(--brand);font-size:1.2rem;margin-bottom:10px}
+.press-card p{color:var(--muted);font-size:0.95rem;line-height:1.4}
+.press-card a{color:var(--accent);font-weight:500;display:inline-block;margin-top:8px}
+.press-card a:hover{text-decoration:underline}
+
+/* SOCIAL */
+.social{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+.social a{font-size:22px;color:var(--muted);transition:.3s}
+.social a:hover{color:var(--brand)}
+
+footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
+
+@media(max-width:900px){
+nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
+nav.show{display:flex}
+.menu-btn{display:block}
+}
+</style>
 </head>
 <body>
+
 <header>
-  <div class="container header-inner">
-    <div class="brand">
-      <img src="assets/images/logo.png" alt="Point Media Logo">
-      <strong>Point Media</strong>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="press.html" class="active">Press</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<div class="container header-inner">
+  <div class="brand">
+    <img src="logo.png" alt="Point Media Logo">
+    <strong>Point Media</strong>
   </div>
+  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="founder.html">Founder</a>
+    <a href="press.html" class="active">Press</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
 </header>
 
 <section class="container">
-  <h1>Press & Media Coverage</h1>
-  <p>Here’s the latest news and articles featuring Syed Asif Ali and Point Media:</p>
-
-  <div class="press-articles">
-    <ul>
-      <li>
-        <a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">
-          TechBullion — Syed Asif Ali: Founder of Fastest Growing Digital Media Company
-        </a>
-      </li>
-      <li>
-        <a href="https://www.crunchbase.com/person/syed-asif-ali" target="_blank">
-          Crunchbase — Syed Asif Ali Profile & Activities
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/pointmedia" target="_blank">
-          LinkedIn — Point Media & Founder Profile
-        </a>
-      </li>
-      <li>
-        <a href="https://medium.com/@asif693411" target="_blank">
-          Medium — Insights & Articles by Syed Asif Ali
-        </a>
-      </li>
-      <li>
-        <a href="https://pointika.link" target="_blank">
-          Official Website — Pointika
-        </a>
-      </li>
-    </ul>
+<h2>Press & Media Coverage</h2>
+<div class="press-grid">
+  <div class="press-card">
+    <h3>TechBullion</h3>
+    <p>Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media. Highlighting the company's innovative approach to digital communications.</p>
+    <a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">Read Article</a>
   </div>
+  <div class="press-card">
+    <h3>Crunchbase</h3>
+    <p>Pointika & Point Media featured on Crunchbase for their digital media growth and founder leadership, establishing credibility in the tech ecosystem.</p>
+    <a href="https://www.crunchbase.com/organization/pointika" target="_blank">View Profile</a>
+  </div>
+  <div class="press-card">
+    <h3>Other Media Features</h3>
+    <p>Additional interviews and features about Syed Asif Ali and Point Media in regional and international publications, emphasizing media influence.</p>
+    <a href="#" target="_blank">Learn More</a>
+  </div>
+</div>
+</section>
 
-  <p>For media inquiries or collaborations, please contact: <a href="mailto:info@syedasifali.link">info@syedasifali.link</a></p>
+<section class="container">
+<h2>Connect With Us</h2>
+<div class="social">
+  <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
+  <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+</div>
 </section>
 
 <footer>
 © 2025 Point Media · Digital Media & Communications
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("nav").classList.toggle("show");
+}
+</script>
+
 </body>
 </html>

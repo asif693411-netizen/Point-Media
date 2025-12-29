@@ -143,30 +143,70 @@ a{color:#60a5fa;text-decoration:none;}
 a:hover{text-decoration:underline;}
 </style>
 
-<!-- ===== ORGANIZATION + FOUNDER JSON-LD (UNCHANGED LOGIC) ===== -->
+<!-- ===== UPDATED JSON-LD WITH BRAND, ORGANIZATION, FOUNDER & BREADCRUMB ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Point Media",
-  "alternateName":"Pointika",
-  "url":"https://pointmedia.link",
-  "logo":"https://pointmedia.link/logo.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Syed Asif Ali",
-    "birthDate":"1997-01-23",
-    "birthPlace":{
-      "@type":"Place",
-      "name":"South Waziristan Agency, Pakistan"
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Brand",
+      "@id": "https://pointmedia.link/#brand",
+      "name": "Point Media",
+      "url": "https://pointmedia.link/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pointmedia.link/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Point Media is a digital media and communications brand founded by Syed Asif Ali.",
+      "sameAs": [
+        "https://www.instagram.com/boxer_01101",
+        "https://www.linkedin.com/in/pointmedia"
+      ]
     },
-    "jobTitle":"Founder & Digital Creator",
-    "url":"https://syedasifali.link"
-  },
-  "sameAs":[
-    "https://www.instagram.com/boxer_01101",
-    "https://www.linkedin.com/in/pointmedia",
-    "https://www.crunchbase.com/organization/pointika"
+
+    {
+      "@type": "Organization",
+      "@id": "https://pointmedia.link/#organization",
+      "name": "Point Media",
+      "url": "https://pointmedia.link/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://pointmedia.link/logo.png"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Syed Asif Ali",
+        "birthDate": "1997-01-23",
+        "birthPlace": {
+          "@type": "Place",
+          "name": "South Waziristan Agency, Pakistan"
+        },
+        "jobTitle": "Founder & Digital Creator",
+        "url": "https://syedasifali.link"
+      },
+      "subOrganization": {
+        "@type": "Organization",
+        "name": "Pointika",
+        "url": "https://pointika.link"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://pointmedia.link/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pointmedia.link/"
+        }
+      ]
+    }
+
   ]
 }
 </script>
@@ -188,7 +228,7 @@ a:hover{text-decoration:underline;}
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-<a href="founder.html" class="active">Founder</a>
+      <a href="founder.html" class="active">Founder</a>
       <a href="press.html">Press</a>
       <a href="contact.html">Contact</a>
     </div>

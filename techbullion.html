@@ -3,37 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechBullion Article - Syed Asif Ali & Point Media</title>
-<link rel="stylesheet" href="style.css">
+<title>Founder — Syed Asif Ali | Point Media</title>
+<meta name="description" content="Meet Syed Asif Ali, the founder of Point Media. Expert in digital media, brand strategy, and ethical storytelling. Based in UAE and Pakistan.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="canonical" href="https://point-media.link/founder.html">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+--bg:#0f172a; --card:#020617; --border:#1e293b;
+--text:#e5e7eb; --muted:#9aa4b2;
+--brand:#60a5fa; --accent:#22d3ee;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Arial, sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+
+/* NAVIGATION */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#020617;
+  z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.5);
+  border-bottom: 1px solid var(--border);
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo-wrap{display:flex;align-items:center;gap:10px;}
+.logo-wrap img{height:38px;}
+.logo-text{font-size:20px;font-weight:bold;color:var(--brand);letter-spacing:1px;}
+
+.menu{display:flex;gap:25px;}
+.menu a{color:var(--text);font-weight:500;transition:0.3s;font-size:15px;}
+.menu a:hover, .menu a.active{color:var(--brand);}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
+
+/* MOBILE MENU */
+@media(max-width:768px){
+  .menu{
+    position:fixed;
+    top:68px;
+    right:-100%;
+    background:#020617;
+    flex-direction:column;
+    width:260px;
+    padding:30px;
+    height:100vh;
+    transition:0.4s ease-in-out;
+    border-left:1px solid var(--border);
+  }
+  .menu.show{right:0;}
+  .menu-btn{display:block;}
+}
+
+/* HEADER */
+header{
+  background:radial-gradient(circle at top, #1e3a8a 0%, #0f172a 100%);
+  padding:150px 20px 70px;
+  text-align:center;
+}
+header h1{margin:0;font-size:42px;color:#fff;letter-spacing:-1px;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
+
+/* MAIN CONTENT */
+section{max-width:1000px;margin:auto;padding:60px 20px;}
+h2{color:var(--brand);margin-bottom:25px;border-left:4px solid var(--brand);padding-left:15px;}
+
+.card{
+  background:var(--card);
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.5);
+  margin-bottom:40px;
+  text-align:center;
+  border: 1px solid var(--border);
+}
+
+/* PROFILE IMAGE */
+.profile-img{
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  border:4px solid var(--brand);
+  margin-bottom:25px;
+  object-fit:cover;
+  box-shadow:0 0 25px rgba(96, 165, 250, 0.3);
+  transition:transform .4s;
+}
+.profile-img:hover{transform:scale(1.05) rotate(2deg);}
+
+.bio-text{text-align:left;margin-top:20px;color:var(--text);font-size:17px;}
+.bio-text strong{color:var(--brand);}
+
+/* ACHIEVEMENTS LIST */
+.achievements{
+  text-align:left;
+  background:rgba(255,255,255,0.03);
+  padding:25px;
+  border-radius:15px;
+  margin-top:30px;
+}
+.achievements ul{list-style:none;padding:0;}
+.achievements li{
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.achievements li i{color:var(--accent);font-size:16px;}
+
+/* SOCIAL LINKS */
+.social{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:30px;}
+.social a{
+  width:45px;
+  height:45px;
+  background:var(--border);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  color:var(--text);
+  transition:.3s ease;
+}
+.social a:hover{
+  background:var(--brand);
+  color:#020617;
+  transform:translateY(-5px);
+}
+
+footer{text-align:center;padding:40px;background:#020617;color:var(--muted);font-size:14px;border-top:1px solid var(--border);}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Syed Asif Ali",
+  "url": "https://point-media.link/founder.html",
+  "jobTitle": "Founder & Digital Creator",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Point Media"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/pointmedia",
+    "https://www.instagram.com/boxer_01101",
+    "https://x.com/Boxer_01101",
+    "https://www.youtube.com/@AsifAli-Digital"
+  ]
+}
+</script>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1>Point Media Coverage</h1>
-    <nav>
+<nav>
+  <div class="nav-container">
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Point Media Logo">
+      <div class="logo-text">POINT MEDIA</div>
+    </div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
       <a href="index.html">Home</a>
-      <a href="founder.html" class="active">Founder</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
+      <a href="founder.html" class="active">Founder</a>
+      <a href="press.html">Press</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </div>
   </div>
+</nav>
+
+<header>
+  <h1>Syed Asif Ali</h1>
+  <p>Founder of Point Media & Pointika · Digital Strategist · Entrepreneur</p>
 </header>
 
-<section class="container">
-  <h2>Featured Article</h2>
-  <div class="card">
-    <h3>Syed Asif Ali – Founder of Fastest Growing Digital Media Company – Point Media</h3>
-    <p><strong>Published on:</strong> June 25, 2022 | <strong>Source:</strong> <a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">TechBullion</a></p>
-    <p>Syed Asif Ali, a UAE-based digital creator and entrepreneur, founded Point Media, focusing on content creation, strategic storytelling, and building credible online presence for individuals and brands. The company has quickly gained recognition in the digital media industry.</p>
-    <p>Read full article: <a href="https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/" target="_blank">TechBullion</a></p>
-  </div>
+<section>
+<div class="card">
+<img src="profile.jpg" alt="Syed Asif Ali" class="profile-img" loading="lazy">
+<div class="bio-text">
+  <p><strong>Syed Asif Ali</strong> is a UAE-based digital entrepreneur and the visionary founder of <strong>Point Media</strong> and its creative sub-brand <strong>Pointika</strong>. With nearly a decade of experience in the digital ecosystem, he specializes in high-impact storytelling, reputation management, and building credible online entities.</p>
+</div>
+
+<div class="achievements">
+  <h3 style="margin-bottom:15px; color:#fff;">Milestones & Expertise</h3>
+  <ul>
+    <li><i class="fas fa-check-circle"></i> Pioneer of <strong>Ethical Digital Storytelling</strong>.</li>
+    <li><i class="fas fa-check-circle"></i> Featured in <strong>IPS News, TechBullion,</strong> and <strong>Big News Network</strong>.</li>
+    <li><i class="fas fa-check-circle"></i> Expert in <strong>Google Knowledge Graph</strong> and Entity Building.</li>
+    <li><i class="fas fa-check-circle"></i> Leading digital strategist for brands across the MENA region.</li>
+  </ul>
+</div>
+
+<div class="social">
+  <a href="https://www.linkedin.com/in/pointmedia" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/boxer_01101" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://x.com/Boxer_01101" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.tiktok.com/@pointika.media" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.facebook.com/pointmedia" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
 </section>
 
 <footer>
-  © 2025 Syed Asif Ali · Point Media
+© 2026 Point Media · Founded by Syed Asif Ali · Strategic Global Communications
 </footer>
 
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+document.addEventListener("click",function(e){
+  const menu=document.getElementById("menu");
+  const btn=document.querySelector(".menu-btn");
+  if(!menu.contains(e.target) && !btn.contains(e.target)){
+    menu.classList.remove("show");
+  }
+});
+</script>
 </body>
 </html>

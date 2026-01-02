@@ -7,11 +7,10 @@
 <meta name="description" content="Official social media profiles of Syed Asif Ali. Follow for insights on digital media, storytelling, and brand growth.">
 
 <link rel="canonical" href="https://point-media.link/socials.html">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; }
+:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; --pointika: #38bdf8; }
 body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
 
 /* NAVIGATION */
@@ -25,40 +24,53 @@ nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-botto
 @media(max-width:768px){ .menu{display:none;} }
 
 /* HEADER */
-header.hero{padding:140px 20px 40px;text-align:center;background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);}
-.profile-mini{width:100px;height:100px;border-radius:50%;border:3px solid var(--brand);margin-bottom:15px;object-fit:cover;}
-header h1{font-size:32px;margin:10px 0;color:#fff;}
-header p{color:#94a3b8;font-size:16px;}
+header.hero{padding:120px 20px 30px;text-align:center;background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);}
+.profile-mini{width:90px;height:90px;border-radius:50%;border:3px solid var(--brand);margin-bottom:15px;object-fit:cover;box-shadow: 0 0 20px rgba(96,165,250,0.3);}
+header h1{font-size:28px;margin:10px 0;color:#fff; letter-spacing: -1px;}
+header p{color:#94a3b8;font-size:15px; margin-bottom: 20px;}
+
+/* ECOSYSTEM TAGS */
+.tags{display:flex; justify-content:center; gap:10px; margin-bottom: 20px; flex-wrap: wrap;}
+.tag{font-size: 11px; padding: 4px 12px; border-radius: 50px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); font-weight: bold; text-transform: uppercase;}
 
 /* SOCIAL LINKS SECTION */
-section{max-width:600px;margin:auto;padding:40px 20px;}
-.social-links{display:flex;flex-direction:column;gap:15px;}
+section{max-width:480px;margin:auto;padding:20px;}
+.social-links{display:flex;flex-direction:column;gap:12px;}
 .social-card{
     display:flex;
     align-items:center;
-    padding:18px 25px;
+    padding:16px 20px;
     background:var(--card);
     border:1px solid var(--border);
-    border-radius:15px;
+    border-radius:12px;
     text-decoration:none;
     color:var(--text);
     font-weight:600;
-    font-size:17px;
-    transition:0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size:16px;
+    transition:0.3s ease;
 }
-.social-card i{font-size:24px;width:40px;color:var(--brand);}
+/* Brand Specific Colors on Hover */
+.social-card.linkedin:hover{border-color: #0077b5; background: rgba(0, 119, 181, 0.1);}
+.social-card.instagram:hover{border-color: #e4405f; background: rgba(228, 64, 95, 0.1);}
+.social-card.youtube:hover{border-color: #ff0000; background: rgba(255, 0, 0, 0.1);}
+
+.social-card i{font-size:20px;width:35px;color:var(--brand);}
 .social-card:hover{
-    transform:scale(1.03);
-    border-color:var(--brand);
-    background:rgba(96,165,250,0.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.4);
 }
 .social-card span{flex-grow:1;}
-.social-card .fa-chevron-right{font-size:14px;color:var(--border);opacity:0.5;}
+.social-card .fa-chevron-right{font-size:12px;color:var(--border);opacity:0.5;}
 
-footer{text-align:center;padding:50px 20px;color:#64748b;font-size:14px;border-top:1px solid var(--border);margin-top:40px;}
+/* FEATURED CTA */
+.featured-link {
+    background: linear-gradient(90deg, #1e3a8a, var(--brand));
+    border: none;
+    color: #fff;
+}
+
+footer{text-align:center;padding:40px 20px;color:#64748b;font-size:13px;border-top:1px solid var(--border);margin-top:40px;}
 </style>
-
 </head>
 <body>
 
@@ -76,38 +88,49 @@ footer{text-align:center;padding:50px 20px;color:#64748b;font-size:14px;border-t
 
 <header class="hero">
   <img src="profile.jpg" alt="Syed Asif Ali" class="profile-mini">
-  <h1>Connect with Me</h1>
-  <p>Syed Asif Ali — Founder of Point Media & Pointika</p>
+  <h1>Syed Asif Ali</h1>
+  <p>Digital Strategist & Founder</p>
+  <div class="tags">
+    <span class="tag">Point Media</span>
+    <span class="tag">Pointika</span>
+    <span class="tag">Reputation Expert</span>
+  </div>
 </header>
+
+
 
 <section>
   <div class="social-links">
-    <a href="https://www.linkedin.com/in/pointmedia" target="_blank" class="social-card">
-      <i class="fab fa-linkedin"></i> <span>LinkedIn</span> <i class="fas fa-chevron-right"></i>
+    <a href="https://syedasifali.link" target="_blank" class="social-card featured-link">
+      <i class="fas fa-globe" style="color:#fff;"></i> <span>Official Portfolio Website</span> <i class="fas fa-chevron-right"></i>
     </a>
-    <a href="https://www.instagram.com/boxer_01101" target="_blank" class="social-card">
+    <a href="https://pointika.link" target="_blank" class="social-card">
+      <i class="fas fa-bolt" style="color:var(--pointika);"></i> <span>Pointika (Creative Agency)</span> <i class="fas fa-chevron-right"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/pointmedia" target="_blank" class="social-card linkedin">
+      <i class="fab fa-linkedin"></i> <span>LinkedIn Profile</span> <i class="fas fa-chevron-right"></i>
+    </a>
+    <a href="https://www.instagram.com/boxer_01101" target="_blank" class="social-card instagram">
       <i class="fab fa-instagram"></i> <span>Instagram</span> <i class="fas fa-chevron-right"></i>
     </a>
     <a href="https://www.tiktok.com/@pointika.media" target="_blank" class="social-card">
       <i class="fab fa-tiktok"></i> <span>TikTok</span> <i class="fas fa-chevron-right"></i>
     </a>
-    <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank" class="social-card">
-      <i class="fab fa-youtube"></i> <span>YouTube</span> <i class="fas fa-chevron-right"></i>
+    <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank" class="social-card youtube">
+      <i class="fab fa-youtube"></i> <span>YouTube Channel</span> <i class="fas fa-chevron-right"></i>
     </a>
     <a href="https://x.com/Boxer_01101" target="_blank" class="social-card">
-      <i class="fab fa-x-twitter"></i> <span>X (Twitter)</span> <i class="fas fa-chevron-right"></i>
+      <i class="fab fa-x-twitter"></i> <span>X / Twitter</span> <i class="fas fa-chevron-right"></i>
     </a>
     <a href="https://medium.com/@asif693411" target="_blank" class="social-card">
-      <i class="fab fa-medium"></i> <span>Medium</span> <i class="fas fa-chevron-right"></i>
-    </a>
-    <a href="https://www.facebook.com/pointmedia" target="_blank" class="social-card">
-      <i class="fab fa-facebook-f"></i> <span>Facebook</span> <i class="fas fa-chevron-right"></i>
+      <i class="fab fa-medium"></i> <span>Read My Articles</span> <i class="fas fa-chevron-right"></i>
     </a>
   </div>
 </section>
 
 <footer>
-  © 2026 Syed Asif Ali · Point Media Ecosystem
+  © 2026 Syed Asif Ali · Building Digital Legacies
 </footer>
 
 </body>

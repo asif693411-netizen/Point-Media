@@ -8,15 +8,16 @@
 <meta name="description" content="Strategic digital media services by Point Media. From reputation management and media visibility to creative storytelling via Pointika. Founded by Syed Asif Ali.">
 
 <link rel="canonical" href="https://pointmedia.link/services.html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; }
+:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; --pointika:#38bdf8; }
 body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
 
 /* NAVIGATION */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid var(--border);}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:20px;font-weight:bold;color:var(--brand);letter-spacing:1px;}
+.logo{font-size:22px;font-weight:bold;color:var(--brand);letter-spacing:1px; text-decoration: none;}
 .menu{display:flex;gap:25px;}
 .menu a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;transition:0.3s;}
 .menu a:hover, .menu a.active{color:var(--brand);}
@@ -28,73 +29,39 @@ nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-botto
   .menu-btn{display:block;}
 }
 
-header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:140px 20px 80px;text-align:center;}
-header h1{margin:0;font-size:38px;color:#fff;}
+header{background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);padding:150px 20px 80px;text-align:center;}
+header h1{margin:0;font-size:42px;color:#fff; letter-spacing: -1px;}
 header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
 
 section{max-width:1100px;margin:auto;padding:60px 20px;}
-h2{color:var(--brand);margin-bottom:30px;font-size:28px;}
-.card{background:var(--card);padding:35px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,0.5);margin-bottom:40px;border:1px solid var(--border);}
+h2{color:var(--brand);margin-bottom:30px;font-size:32px; letter-spacing: -1px;}
+.card{background:var(--card);padding:45px;border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,0.5);border:1px solid var(--border);margin-bottom:40px;}
 
-.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
-.service-item{background:rgba(255,255,255,0.02);padding:30px;border-radius:15px;border:1px solid var(--border);transition:0.3s;}
-.service-item:hover{border-color:var(--brand);transform:translateY(-5px);background:rgba(96,165,250,0.05);}
-.service-item h3{color:var(--brand);margin-bottom:15px;font-size:20px;}
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
+.service-item{background:rgba(255,255,255,0.02);padding:35px;border-radius:20px;border:1px solid var(--border);transition:0.3s; position: relative; overflow: hidden;}
+.service-item:hover{border-color:var(--brand);transform:translateY(-8px);background:rgba(96,165,250,0.05);}
+.service-item i { font-size: 30px; color: var(--brand); margin-bottom: 20px; display: block; }
+.service-item h3{color:#fff; margin-bottom:15px;font-size:22px;}
 .service-item p{font-size:15px;color:#94a3b8;}
 
-.brand-badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-bottom:10px;font-weight:bold;letter-spacing:1px;}
-.bg-pointmedia{background:#1e3a8a;color:#fff;}
-.bg-pointika{background:#60a5fa;color:#000;}
+.brand-badge{display:inline-block;font-size:10px;padding:4px 12px;border-radius:50px;margin-bottom:15px;font-weight:bold;letter-spacing:1px; text-transform: uppercase;}
+.bg-pointmedia{background:rgba(96,165,250,0.15);color:var(--brand); border: 1px solid var(--brand);}
+.bg-pointika{background:rgba(56,189,248,0.15);color:var(--pointika); border: 1px solid var(--pointika);}
 
-footer{background:#020617;text-align:center;padding:40px;color:#64748b;font-size:14px;border-top:1px solid var(--border);}
-a{color:var(--brand);text-decoration:none;}
+/* CTA SECTION */
+.cta-box { text-align: center; padding: 60px 20px; background: linear-gradient(rgba(30,58,138,0.3), rgba(11,13,18,1)); border-radius: 24px; border: 1px solid var(--border); margin-top: 40px; }
+.cta-btn { background: var(--brand); color: #000; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; margin-top: 20px; }
+.cta-btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(96,165,250,0.3); }
+
+footer{background:#020617;text-align:center;padding:50px 20px;color:#64748b;font-size:14px;border-top:1px solid var(--border);}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Digital Media & Communications",
-  "provider": {
-    "@type": "Organization",
-    "name": "Point Media",
-    "url": "https://pointmedia.link",
-    "founder": {
-        "@type": "Person",
-        "name": "Syed Asif Ali",
-        "url": "https://syedasifali.link"
-    }
-  },
-  "areaServed": "Global",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Media Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Reputation Management"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Strategic Storytelling"
-        }
-      }
-    ]
-  }
-}
-</script>
 
 </head>
 <body>
 
 <nav>
   <div class="nav-container">
-    <div class="logo">POINT MEDIA</div>
+    <a href="index.html" class="logo">POINT MEDIA</a>
     <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
@@ -114,57 +81,47 @@ a{color:var(--brand);text-decoration:none;}
 
 <section>
 
+
+
 <div class="card">
-  <h2>Our Core Expertise</h2>
+  <h2>Our Expertise</h2>
   <div class="service-list">
-    
-    <div class="service-item">
-      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
-      <h3>Digital Authority Building</h3>
-      <p>Establishing credible online identities through structured data, SEO, and entity-based brand positioning.</p>
-    </div>
 
     <div class="service-item">
-      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
+      <span class="brand-badge bg-pointmedia">Corporate Strategy</span>
+      <i class="fas fa-shield-alt"></i>
       <h3>Reputation Management</h3>
-      <p>Crafting and protecting the digital narratives of public figures, entrepreneurs, and global organizations.</p>
+      <p>Crafting and protecting the digital narratives of public figures, entrepreneurs, and global organizations with precision.</p>
     </div>
 
     <div class="service-item">
-      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
+      <span class="brand-badge bg-pointmedia">Growth</span>
+      <i class="fas fa-chart-line"></i>
       <h3>Media Visibility Strategy</h3>
-      <p>Securing high-impact placements and exposure across international digital press and media channels.</p>
+      <p>Securing high-impact placements and organic authority across international digital press and media channels.</p>
     </div>
 
     <div class="service-item">
-      <span class="brand-badge bg-pointika">POINTIKA</span>
+      <span class="brand-badge bg-pointika">Creative</span>
+      <i class="fas fa-pen-nib"></i>
       <h3>Strategic Storytelling</h3>
-      <p>Converting brand values into compelling human stories that resonate with modern digital audiences.</p>
+      <p>Converting brand values into compelling human stories that resonate and drive engagement via Pointika.</p>
     </div>
 
     <div class="service-item">
-      <span class="brand-badge bg-pointika">POINTIKA</span>
-      <h3>Content Ecosystems</h3>
-      <p>End-to-end production of platform-specific content designed for engagement and viral potential.</p>
-    </div>
-
-    <div class="service-item">
-      <span class="brand-badge bg-pointika">POINTIKA</span>
+      <span class="brand-badge bg-pointika">Influence</span>
+      <i class="fas fa-users"></i>
       <h3>Influencer Management</h3>
-      <p>Bridging the gap between brands and creators to build authentic, long-term digital partnerships.</p>
+      <p>Bridging the gap between brands and world-class creators to build authentic, long-term digital partnerships.</p>
     </div>
 
   </div>
 </div>
 
-<div class="card">
-  <h2>Why Our Approach Works</h2>
-  <ul style="padding-left:20px; color:#94a3b8;">
-    <li><strong>Founder-Led Strategy:</strong> Every campaign is overseen by Syed Asif Ali's strategic vision.</li>
-    <li><strong>Data-Driven Narratives:</strong> We use Schema and SEO to ensure stories are not just told, but discovered.</li>
-    <li><strong>Global Network:</strong> Strong presence in the UAE and South Asia with a worldwide digital reach.</li>
-    <li><strong>Ethics First:</strong> A commitment to transparent and credible media practices.</li>
-  </ul>
+<div class="cta-box">
+  <h2>Ready to Build Your Digital Legacy?</h2>
+  <p>Consult with Syed Asif Ali for a customized digital media strategy.</p>
+  <a href="contact.html" class="cta-btn">Start Your Consultation</a>
 </div>
 
 </section>
@@ -176,21 +133,7 @@ a{color:var(--brand);text-decoration:none;}
 <script>
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
-
-function toggleMenu(){
-  menu.classList.toggle("show");
-}
-
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-document.addEventListener("click",function(e){
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-  }
-});
+menuBtn.addEventListener("click", () => menu.classList.toggle("show"));
 </script>
 
 </body>

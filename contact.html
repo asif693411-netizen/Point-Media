@@ -7,82 +7,61 @@
 <meta name="description" content="Get in touch with Point Media and founder Syed Asif Ali. For media inquiries, digital storytelling, and brand collaborations, contact us today.">
 
 <link rel="canonical" href="https://pointmedia.link/contact.html">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://pointmedia.link/#organization",
-      "name": "Point Media",
-      "url": "https://pointmedia.link",
-      "logo": "https://pointmedia.link/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+971527157894",
-        "contactType": "Customer Service",
-        "email": "contact@syedasifali.link",
-        "availableLanguage": ["English", "Urdu", "Arabic"]
-      },
-      "founder": {
-        "@type": "Person",
-        "@id": "https://syedasifali.link/#person",
-        "name": "Syed Asif Ali"
-      }
-    },
-    {
-      "@type": "ContactPage",
-      "@id": "https://pointmedia.link/contact.html#webpage",
-      "url": "https://pointmedia.link/contact.html",
-      "name": "Contact Point Media",
-      "isPartOf": { "@id": "https://pointmedia.link/#organization" }
-    }
-  ]
-}
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:#0b0d12;color:#e5e7eb;line-height:1.7;}
+:root { --primary: #3b82f6; --bg: #0b0d12; --card: #111827; --whatsapp: #25D366; }
+body{margin:0;font-family:'Inter', sans-serif;background:var(--bg);color:#e5e7eb;line-height:1.7;}
+
+/* NAVIGATION */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid #1e293b;}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:20px;font-weight:bold;color:#60a5fa;letter-spacing:1px;}
+.logo{font-size:24px;font-weight:800;color:var(--primary);letter-spacing:-1px; text-decoration:none;}
 .menu{display:flex;gap:25px;}
-.menu a{color:#e5e7eb;text-decoration:none;font-size:15px;font-weight:500;transition:0.3s;}
-.menu a:hover, .menu a.active{color:#60a5fa;}
+.menu a{color:#94a3b8;text-decoration:none;font-size:14px;font-weight:500;transition:0.3s;}
+.menu a:hover, .menu a.active{color:#fff;}
 .menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
 
 @media(max-width:768px){
-  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:0.3s;border-left:1px solid #1e293b;}
+  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:30px;height:100vh;transition:0.3s;border-left:1px solid #1e293b;}
   .menu.show{right:0;}
   .menu-btn{display:block;}
 }
 
-header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:140px 20px 80px;text-align:center;}
-header h1{margin:0;font-size:36px;color:#fff;}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
+/* HEADER */
+header{background: radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%); padding:160px 20px 80px;text-align:center;}
+header h1{margin:0;font-size:48px;color:#fff; letter-spacing: -2px;}
+header p{max-width:800px;margin:15px auto 0;color:#94a3b8; font-size: 19px;}
 
 section{max-width:1100px;margin:auto;padding:60px 20px;}
-h2{color:#60a5fa;margin-bottom:20px;font-size:26px;}
-.card{background:#111827;padding:35px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,0.5);margin-bottom:40px;border:1px solid #1e293b;}
+h2{color:#fff;margin-bottom:20px;font-size:28px; letter-spacing: -1px;}
+.card{background:var(--card);padding:40px;border-radius:24px;box-shadow:0 20px 50px rgba(0,0,0,0.5);margin-bottom:40px;border:1px solid #1e293b;}
 
-.contact-info p{margin:10px 0;font-size:17px;}
-.contact-info strong{color:#60a5fa;}
+/* CONTACT BUTTONS */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.contact-method { background: rgba(255,255,255,0.03); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); text-align: center; transition: 0.3s; }
+.contact-method:hover { border-color: var(--primary); transform: translateY(-5px); }
+.contact-method i { font-size: 30px; color: var(--primary); margin-bottom: 15px; display: block; }
+.contact-method strong { display: block; font-size: 18px; margin-bottom: 10px; color: #fff; }
 
-.social-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;}
-.social-links a{display:flex;align-items:center;gap:12px;padding:12px 18px;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid #1e293b;text-decoration:none;color:#cbd5f5;font-weight:500;transition:0.3s;}
-.social-links a:hover{background:#1e3a8a;color:#fff;border-color:#60a5fa;transform:translateY(-3px);}
-.social-links img{width:24px;height:24px;filter:grayscale(20%);}
+.wa-btn { display: inline-block; background: var(--whatsapp); color: #fff; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+.wa-btn:hover { background: #1ebe57; box-shadow: 0 10px 20px rgba(37,211,102,0.3); }
 
-footer{background:#020617;text-align:center;padding:40px;color:#64748b;border-top:1px solid #1e293b;}
-a{color:#60a5fa;text-decoration:none;}
+/* SOCIAL LINKS */
+.social-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
+.social-links a{display:flex;align-items:center;gap:12px;padding:15px;background:rgba(255,255,255,0.02);border-radius:15px;border:1px solid #1e293b;text-decoration:none;color:#cbd5f5;font-weight:500;transition:0.3s;}
+.social-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);transform:translateY(-3px);}
+.social-links img{width:22px;height:22px; filter: brightness(1.2);}
+
+footer{background:#020617;text-align:center;padding:50px 20px;color:#64748b;border-top:1px solid #1e293b; font-size: 14px;}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-container">
-    <div class="logo">POINT MEDIA</div>
+    <a href="index.html" class="logo">POINT MEDIA</a>
     <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
@@ -96,35 +75,41 @@ a{color:#60a5fa;text-decoration:none;}
 </nav>
 
 <header>
-  <h1>Connect With Us</h1>
-  <p>For strategic digital media solutions and collaboration inquiries.</p>
+  <h1>Global <span>Reach</span> Starts Here</h1>
+  <p>Partner with Point Media for strategic growth and visionary storytelling.</p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Media & Business Inquiries</h2>
-    <p>Point Media is open for partnerships with global brands, influencers, and media agencies. Reach out to our founder <strong>Syed Asif Ali</strong> and the team via the following channels:</p>
+  <div class="contact-grid">
+    <div class="contact-method">
+      <strong>Official Inquiry</strong>
+      <p style="margin-bottom: 5px;">contact@syedasifali.link</p>
+      <p><a href="https://syedasifali.link" target="_blank" style="color: var(--primary); font-size: 14px;">Visit Founder Hub →</a></p>
+    </div>
+
+    <div class="contact-method" style="border-color: rgba(37, 211, 102, 0.2);">
+      <strong>Instant Connection</strong>
+      <p>+971 52 715 7894</p>
+      <a href="https://wa.me/971527157894?text=Hello%20Point%20Media,%20I'd%20like%20to%20discuss%20a%20strategic%20partnership." class="wa-btn">Chat on WhatsApp</a>
+    </div>
   </div>
 
-  <div class="card contact-info">
-    <h2>Direct Contact</h2>
-    <p><strong>Official Phone:</strong> +971 52 715 7894</p>
-    <p><strong>Official Email:</strong> <a href="mailto:contact@syedasifali.link">contact@syedasifali.link</a></p>
-    <p><strong>Founder Hub:</strong> <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
-  </div>
-
-  <div class="card">
-    <h2>Official Social Channels</h2>
-    <div class="social-links">
+  <div class="card" style="margin-top: 40px;">
+    <h2>Digital Headquarters</h2>
+    <p>Point Media leads a multi-brand ecosystem specializing in high-level reputation management and influencer storytelling via our sub-brand <strong>Pointika</strong>.</p>
+    
+    <div class="social-links" style="margin-top: 30px;">
       <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn</a>
       <a href="https://www.instagram.com/boxer_01101" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram</a>
-      <a href="https://x.com/Boxer_01101" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X"> X / Twitter</a>
+      <a href="https://x.com/Boxer_01101" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X"> Twitter / X</a>
       <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"> YouTube</a>
       <a href="https://www.tiktok.com/@pointika.media" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok"> TikTok</a>
       <a href="https://www.facebook.com/pointmedia" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook</a>
     </div>
   </div>
 </section>
+
+
 
 <footer>
 © 2026 Point Media · Leading Digital Communications · Founded by Syed Asif Ali  
@@ -134,19 +119,9 @@ a{color:#60a5fa;text-decoration:none;}
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 
-function toggleMenu(){
+menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show");
-}
-
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-document.addEventListener("click",function(e){
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-  }
+  menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
 });
 </script>
 

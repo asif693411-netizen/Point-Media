@@ -4,12 +4,12 @@
 
   <!-- Home Page -->
   <url>
-    <loc>https://point-media.link/</loc>
+    <loc>https://point-media.link/index.html</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://point-media.link/logo.png</image:loc>
-      <image:caption>Point Media - Strategic Digital Communications</image:caption>
+      <image:caption>Point Media Logo</image:caption>
     </image:image>
   </url>
 

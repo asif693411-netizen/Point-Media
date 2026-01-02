@@ -4,120 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Point Media | Digital Media & Communications Brand</title>
-
-<meta name="description" content="Point Media is a digital media and communications brand focused on content creation, media visibility, and digital growth. Pointika operates as a sub-brand under Point Media.">
+<title>About Point Media — Leading Digital Media & Communications Agency</title>
+<meta name="description" content="Learn about Point Media, a global digital communications brand. From strategic storytelling to brand visibility, we lead the digital transformation for creators and brands.">
 
 <link rel="canonical" href="https://pointmedia.link/about.html">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#0f172a;
-  color:#e5e7eb;
-  line-height:1.7;
-}
-nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:#020617;
-  z-index:1000;
-}
-.nav-container{
-  max-width:1200px;
-  margin:auto;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{font-size:20px;font-weight:bold;color:#60a5fa;}
+/* Same base styles as yours with minor professional tweaks */
+body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:#0b0d12;color:#e5e7eb;line-height:1.7;}
+nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid #1e293b;}
+.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:22px;font-weight:bold;color:#60a5fa;letter-spacing:1px;}
 .menu{display:flex;gap:25px;}
-.menu a{color:#e5e7eb;text-decoration:none;}
-.menu a:hover{color:#60a5fa;}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
+.menu a{color:#e5e7eb;text-decoration:none;font-weight:500;font-size:15px;transition:0.3s;}
+.menu a:hover, .menu a.active{color:#60a5fa;}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
 
 @media(max-width:768px){
-.menu{
-  position:fixed;
-  top:60px;
-  right:-100%;
-  background:#020617;
-  flex-direction:column;
-  width:240px;
-  height:100vh;
-  padding:20px;
-  transition:.3s;
-}
+.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:260px;height:100vh;padding:30px;transition:.4s;border-left:1px solid #1e293b;}
 .menu.show{right:0}
 .menu-btn{display:block}
 }
 
-header{
-  padding:120px 20px 60px;
-  background:linear-gradient(135deg,#1e3a8a,#0f172a);
-  text-align:center;
-}
-header h1{margin:0;font-size:36px}
-header p{max-width:800px;margin:15px auto;color:#cbd5f5}
+header{padding:150px 20px 80px;background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);text-align:center;}
+header h1{margin:0;font-size:42px;color:#fff;letter-spacing:1px;}
+header p{max-width:800px;margin:15px auto;color:#94a3b8;font-size:18px;}
 
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-}
-.card{
-  background:#020617;
-  padding:30px;
-  border-radius:14px;
-  margin-bottom:40px;
-  box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-h2{color:#60a5fa;margin-bottom:15px}
-ul{padding-left:20px}
-footer{
-  background:#020617;
-  text-align:center;
-  padding:30px;
-  color:#94a3b8;
-}
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+.card{background:#111827;padding:35px;border-radius:20px;margin-bottom:40px;box-shadow:0 10px 40px rgba(0,0,0,0.5);border:1px solid #1e293b;}
+h2{color:#60a5fa;margin-bottom:20px;font-size:28px;}
+ul{padding-left:20px;color:#94a3b8;}
+ul li{margin-bottom:10px;}
+footer{background:#020617;text-align:center;padding:40px;color:#64748b;border-top:1px solid #1e293b;font-size:14px;}
+a.brand-link{color:#60a5fa;text-decoration:none;font-weight:bold;}
 </style>
 
-<!-- STRONG ORGANIZATION JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://pointmedia.link/#organization",
   "name": "Point Media",
-  "alternateName": "Point Media & Communications",
   "url": "https://pointmedia.link",
   "logo": "https://pointmedia.link/logo.png",
-  "foundingDate": "2017",
   "founder": {
     "@type": "Person",
+    "@id": "https://syedasifali.link/#person",
     "name": "Syed Asif Ali"
   },
-  "description": "Point Media is a digital media and communications brand specializing in content creation, digital visibility, and strategic storytelling. Pointika operates as a sub-brand under Point Media.",
-  "sameAs": [
-    "https://www.facebook.com/pointika",
-    "https://www.instagram.com/pointika",
-    "https://www.tiktok.com/@pointika"
-  ],
+  "description": "A full-service digital media agency specializing in global communications, reputation management, and content strategy.",
   "subOrganization": {
-    "@type": "Organization",
+    "@type": "Brand",
+    "@id": "https://pointika.link/#brand",
     "name": "Pointika",
     "url": "https://pointika.link"
-  },
-  "areaServed": ["Global","Middle East","South Asia"],
-  "knowsAbout": [
-    "Digital Media",
-    "Content Creation",
-    "Media Visibility",
-    "Brand Strategy",
-    "Online Reputation"
-  ]
+  }
 }
 </script>
 
@@ -126,13 +67,13 @@ footer{
 
 <nav>
   <div class="nav-container">
-    <div class="logo">Point Media</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="logo">POINT MEDIA</div>
+    <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="services.html">Services</a>
-<a href="founder.html" class="active">Founder</a>
+      <a href="founder.html">Founder</a>
       <a href="press.html">Press</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -140,8 +81,8 @@ footer{
 </nav>
 
 <header>
-  <h1>About Point Media</h1>
-  <p>Digital Media · Communications · Strategic Storytelling</p>
+  <h1>Empowering Digital Legacies</h1>
+  <p>Leading the frontier of Media Visibility and Strategic Communications for the modern era.</p>
 </header>
 
 <section>
@@ -149,45 +90,53 @@ footer{
 <div class="card">
 <h2>Who We Are</h2>
 <p>
-Point Media is a digital media and communications brand dedicated to building strong online presence, content credibility, and digital visibility for individuals, brands, and public figures.
+Point Media is a premier digital media and communications agency focused on bridging the gap between vision and visibility. Founded by <strong><a href="https://syedasifali.link" class="brand-link">Syed Asif Ali</a></strong>, we specialize in building unshakable online reputations and crafting content that resonates on a global scale.
 </p>
 </div>
 
-<div class="card">
-<h2>Our Vision</h2>
-<p>
-To create ethical, impactful, and growth-focused digital narratives that help brands and creators stand out in the global digital ecosystem.
-</p>
-</div>
+
 
 <div class="card">
-<h2>Our Services</h2>
+<h2>Our Core Expertise</h2>
 <ul>
-<li>Digital content creation</li>
-<li>Media visibility & brand positioning</li>
-<li>Social media strategy & growth</li>
-<li>Online reputation building</li>
-<li>Strategic storytelling</li>
+<li><strong>Strategic Media Positioning:</strong> Placing brands where they matter.</li>
+<li><strong>Digital Growth & Visibility:</strong> Scaling audience engagement across all platforms.</li>
+<li><strong>Online Reputation Management:</strong> Crafting and protecting digital narratives.</li>
+<li><strong>Communications Consulting:</strong> High-level strategy for public figures and MENA brands.</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Pointika — Sub Brand</h2>
+<h2>The Ecosystem: Pointika</h2>
 <p>
-Pointika operates as a creative and storytelling sub-brand under Point Media, focused on modern content formats, digital campaigns, and platform-specific media strategies.
+As part of our commitment to specialized storytelling, Point Media operates <strong><a href="https://pointika.link" class="brand-link">Pointika</a></strong>—our creative sub-brand. While Point Media handles the broad spectrum of communications, Pointika focuses on the pulse of influencer culture and platform-specific content campaigns.
 </p>
 </div>
 
 </section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+© 2026 Point Media · Leading Digital Communications · Founder: Syed Asif Ali
 </footer>
 
 <script>
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
 function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
+  menu.classList.toggle("show");
 }
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener("click",function(e){
+  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
+    menu.classList.remove("show");
+  }
+});
 </script>
 
 </body>

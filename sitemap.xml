@@ -2,8 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Home Page -->
   <url>
-    <loc>https://point-media.link/index.html</loc>
+    <loc>https://point-media.link/</loc>
     <lastmod>2026-01-02</lastmod>
     <priority>1.0</priority>
     <image:image>
@@ -12,6 +13,7 @@
     </image:image>
   </url>
 
+  <!-- Founder Page -->
   <url>
     <loc>https://point-media.link/founder.html</loc>
     <lastmod>2026-01-02</lastmod>
@@ -22,40 +24,8 @@
     </image:image>
   </url>
 
-  <url>
-    <loc>https://point-media.link/techbullion.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.95</priority>
-  </url>
-
+  <!-- Press Page -->
   <url>
     <loc>https://point-media.link/press.html</loc>
     <lastmod>2026-01-02</lastmod>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://point-media.link/services.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://point-media.link/socials.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://point-media.link/about.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://point-media.link/contact.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.70</priority>
-  </url>
-
-</urlset>
+    <priority

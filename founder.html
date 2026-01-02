@@ -22,9 +22,9 @@ body{background:var(--bg);color:var(--text);line-height:1.7;}
 /* NAVIGATION */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid var(--border);}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:22px;font-weight:bold;color:var(--brand);letter-spacing:1px;}
+.logo{font-size:22px;font-weight:bold;color:var(--brand);letter-spacing:1px; text-decoration:none;}
 .menu{display:flex;gap:25px;}
-.menu a{color:var(--text);text-decoration:none;font-weight:500;transition:0.3s;}
+.menu a{color:var(--text);text-decoration:none;font-weight:500;transition:0.3s; font-size:14px;}
 .menu a:hover, .menu a.active{color:var(--brand);}
 .menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
 
@@ -36,65 +36,44 @@ nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-botto
 
 /* HEADER */
 header{background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);padding:150px 20px 80px;text-align:center;}
-header h1{margin:0;font-size:42px;color:#fff;}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
+header h1{margin:0;font-size:42px;color:#fff; letter-spacing: -1px;}
+header p{max-width:800px;margin:10px auto 0;color:#cbd5f5;font-size:18px; font-weight: 300;}
 
 /* SECTIONS */
-section{max-width:1000px;margin:auto;padding:60px 20px;}
-h2{color:var(--brand);margin-bottom:25px;border-left:4px solid var(--brand);padding-left:15px;}
-.card{background:var(--card);padding:40px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.5);border:1px solid var(--border);text-align:center;}
+section{max-width:900px;margin:auto;padding:60px 20px;}
+.card{background:var(--card);padding:50px 40px;border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,0.5);border:1px solid var(--border);text-align:center;}
 
 /* PROFILE IMAGE */
-.profile-img{width:200px;height:200px;object-fit:cover;border-radius:50%;border:4px solid var(--brand);margin-bottom:25px;box-shadow:0 0 30px rgba(96, 165, 250, 0.3);transition:0.4s;}
-.profile-img:hover{transform:rotate(3deg) scale(1.05);}
+.profile-img{width:180px;height:180px;object-fit:cover;border-radius:50%;border:4px solid var(--brand);margin-bottom:25px;box-shadow:0 0 30px rgba(96, 165, 250, 0.2);transition:0.4s;}
 
-.bio-text{text-align:left;color:var(--muted);font-size:17px;margin-bottom:20px;}
-.bio-text strong{color:#fff;}
+.bio-text{text-align:center;color:var(--text);font-size:18px;margin-bottom:30px;}
+.bio-text strong{color:var(--brand);}
 
-.achievements{text-align:left;background:rgba(255,255,255,0.03);padding:25px;border-radius:12px;margin-top:20px;}
-.achievements li{margin-bottom:10px;list-style:none;display:flex;align-items:center;gap:10px;}
-.achievements li i{color:var(--brand);font-size:14px;}
+.achievements{text-align:left;background:rgba(255,255,255,0.02);padding:30px;border-radius:18px;margin-top:20px; border: 1px solid rgba(255,255,255,0.05);}
+.achievements li{margin-bottom:12px;list-style:none;display:flex;align-items:flex-start;gap:12px; color: var(--muted);}
+.achievements li i{color:var(--brand);margin-top:5px; font-size:14px;}
+
+/* PERSONAL HUB BUTTON */
+.hub-btn {
+  display: inline-block; background: var(--brand); color: #000; padding: 15px 35px; 
+  border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 30px; transition: 0.3s;
+}
+.hub-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(96, 165, 250, 0.3); }
 
 /* SOCIAL */
 .social{display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-top:30px;}
-.social a{width:45px;height:45px;display:flex;align-items:center;justify-content:center;background:var(--border);border-radius:50%;font-size:20px;color:var(--text);transition:.3s;}
+.social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--border);border-radius:50%;font-size:18px;color:var(--text);transition:.3s;}
 .social a:hover{background:var(--brand);color:#000;transform:translateY(-5px);}
 
 footer{text-align:center;padding:40px;background:#020617;color:var(--muted);font-size:14px;border-top:1px solid var(--border);}
 </style>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://syedasifali.link/#person",
-      "name": "Syed Asif Ali",
-      "jobTitle": "Founder & Strategic Storyteller",
-      "url": "https://syedasifali.link",
-      "sameAs": [
-        "https://www.linkedin.com/in/pointmedia",
-        "https://www.instagram.com/boxer_01101",
-        "https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/",
-        "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/",
-        "https://entrepreneursbreak.com/syed-asif-ali-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling.html"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "Point Media",
-      "founder": {"@id": "https://syedasifali.link/#person"}
-    }
-  ]
-}
-</script>
 </head>
 <body>
 
 <nav>
   <div class="nav-container">
-    <div class="logo">POINT MEDIA</div>
+    <a href="index.html" class="logo">POINT MEDIA</a>
     <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
@@ -109,33 +88,37 @@ footer{text-align:center;padding:40px;background:#020617;color:var(--muted);font
 
 <header>
   <h1>Syed Asif Ali</h1>
-  <p>The Visionary Behind Point Media & Pointika</p>
+  <p>Architect of Digital Reputation & Strategic Growth</p>
 </header>
 
 <section>
 <div class="card">
 <img src="profile.jpg" alt="Syed Asif Ali" class="profile-img" loading="lazy">
 <div class="bio-text">
-<p><strong>Syed Asif Ali</strong> is a UAE-based digital entrepreneur and the founder of <strong>Point Media</strong> and its sub-brand <strong>Pointika</strong>. With nearly a decade of experience in the digital ecosystem, he specializes in high-impact storytelling and reputation management.</p>
+<p><strong>Syed Asif Ali</strong> is a Dubai-based digital entrepreneur and the strategic mind behind the <strong>Point Media</strong> ecosystem. He is dedicated to transforming how brands and public figures communicate in the digital era through ethical storytelling and media intelligence.</p>
 </div>
 
+
+
 <div class="achievements">
-  <h3 style="color:#fff; margin-bottom:15px; text-align:left;">Key Milestones</h3>
+  <h3 style="color:#fff; margin-bottom:20px;">Strategic Milestones</h3>
   <ul>
-    <li><i class="fas fa-check-circle"></i> Founder of the <strong>Point Media Ecosystem</strong>.</li>
-    <li><i class="fas fa-check-circle"></i> Featured Expert on <strong>IPS News</strong> & <strong>TechBullion</strong>.</li>
-    <li><i class="fas fa-check-circle"></i> Pioneer of <strong>Ethical Digital Storytelling</strong> in the MENA region.</li>
-    <li><i class="fas fa-check-circle"></i> Consultant for high-profile digital creators and global brands.</li>
+    <li><i class="fas fa-certificate"></i> Founder of <strong>Point Media</strong> and <strong>Pointika</strong> sub-brand.</li>
+    <li><i class="fas fa-newspaper"></i> Featured on <strong>IPS News</strong>, <strong>TechBullion</strong> & <strong>Entrepreneurs Break</strong>.</li>
+    <li><i class="fas fa-globe"></i> Specialist in MENA region digital growth and reputation management.</li>
+    <li><i class="fas fa-users"></i> Strategist for elite creators and corporate entities.</li>
   </ul>
 </div>
 
+<a href="https://syedasifali.link" class="hub-btn" target="_blank">View Personal Portfolio</a>
+
 <div class="social">
-  <a href="https://www.linkedin.com/in/pointmedia" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://www.instagram.com/boxer_01101" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://x.com/Boxer_01101" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-  <a href="https://www.tiktok.com/@pointika.media" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-  <a href="https://www.facebook.com/pointmedia" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.facebook.com/pointmedia" target="_blank"><i class="fab fa-facebook-f"></i></a>
 </div>
 </div>
 </section>
@@ -148,19 +131,8 @@ footer{text-align:center;padding:40px;background:#020617;color:var(--muted);font
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 
-function toggleMenu(){
+menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show");
-}
-
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-document.addEventListener("click",function(e){
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-  }
 });
 </script>
 </body>

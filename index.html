@@ -139,13 +139,31 @@ a{color:var(--brand);text-decoration:none;}
 </footer>
 
 <script>
-const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
 
-menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("show");
-});
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); 
+    menu.classList.toggle("show");
+    menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+      menu.classList.remove("show");
+      menuBtn.textContent = "☰";
+    }
+  });
+
+  const menuLinks = menu.querySelectorAll("a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("show");
+      menuBtn.textContent = "☰";
+    });
+  });
 </script>
+
 
 </body>
 </html>

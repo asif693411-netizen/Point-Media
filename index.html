@@ -8,9 +8,10 @@
 <meta name="description" content="Point Media is a premier digital communications brand by Syed Asif Ali. Specializing in brand visibility, ethical storytelling, and digital growth via Pointika.">
 
 <link rel="canonical" href="https://pointmedia.link/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --text:#e5e7eb; }
+:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --text:#e5e7eb; --whatsapp:#25D366; }
 body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
 
 /* NAVIGATION */
@@ -46,6 +47,14 @@ h2{color:var(--brand);margin-bottom:30px;font-size:32px;}
 .grid div:hover{border-color:var(--brand);transform:translateY(-5px);}
 .grid h3{color:var(--brand);margin-bottom:15px;}
 
+/* WHATSAPP CTA */
+.wa-cta {
+  display: inline-flex; align-items: center; gap: 10px; background: var(--whatsapp); color: #fff; 
+  padding: 15px 35px; border-radius: 50px; font-weight: bold; text-decoration: none; 
+  margin-top: 30px; transition: 0.3s; box-shadow: 0 10px 20px rgba(37,211,102,0.2);
+}
+.wa-cta:hover { transform: scale(1.05); background: #1ebe57; }
+
 /* PRESS SECTION */
 .press-logos{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin-top:20px;opacity:0.8;}
 .press-logos span{font-weight:bold;color:#94a3b8;font-size:14px;border:1px solid #1e293b;padding:5px 12px;border-radius:6px;}
@@ -53,37 +62,6 @@ h2{color:var(--brand);margin-bottom:30px;font-size:32px;}
 footer{background:#020617;text-align:center;padding:50px;color:#64748b;font-size:14px;border-top:1px solid #1e293b;}
 a{color:var(--brand);text-decoration:none;}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://pointmedia.link/#organization",
-      "name": "Point Media",
-      "url": "https://pointmedia.link/",
-      "logo": "https://pointmedia.link/logo.png",
-      "founder": {
-        "@type": "Person",
-        "@id": "https://syedasifali.link/#person",
-        "name": "Syed Asif Ali"
-      },
-      "subOrganization": {
-        "@type": "Brand",
-        "name": "Pointika",
-        "url": "https://pointika.link"
-      }
-    },
-    {
-      "@type": "WebSite",
-      "url": "https://pointmedia.link/",
-      "name": "Point Media Official",
-      "publisher": {"@id": "https://pointmedia.link/#organization"}
-    }
-  ]
-}
-</script>
 
 </head>
 <body>
@@ -111,7 +89,13 @@ a{color:var(--brand);text-decoration:none;}
   <h1>Point Media</h1>
   <p>Strategic Digital Communications & Global Media Visibility</p>
   <div class="sub-brand-tag">Powering <strong>Pointika</strong> Digital Storytelling</div>
+  <br>
+  <a href="https://wa.me/971527157894?text=Hello%20Syed%20Asif%20Ali,%20I%20want%20to%20consult%20Point%20Media%20for%20a%20strategic%20project." class="wa-cta">
+    <i class="fab fa-whatsapp"></i> Start a Project
+  </a>
 </header>
+
+
 
 <section>
 <div class="card">
@@ -124,8 +108,6 @@ a{color:var(--brand);text-decoration:none;}
     <span>BIG NEWS NETWORK</span>
   </div>
 </div>
-
-
 
 <div class="card">
   <h2>What We Drive</h2>
@@ -145,10 +127,10 @@ a{color:var(--brand);text-decoration:none;}
   </div>
 </div>
 
-<div class="card" style="text-align:center;">
+<div class="card" style="text-align:center; border-color: var(--brand);">
   <h2>Looking for Creative Storytelling?</h2>
   <p>Visit our creative sub-brand dedicated to influencer management and platform-specific campaigns.</p>
-  <a href="https://pointika.link" style="font-weight:bold; font-size:18px;">Discover Pointika ↗</a>
+  <a href="https://pointika.link" style="font-weight:bold; font-size:20px; color: #fff;">Discover Pointika ↗</a>
 </div>
 </section>
 
@@ -160,19 +142,8 @@ a{color:var(--brand);text-decoration:none;}
 const menuBtn = document.getElementById("menu-btn");
 const menu = document.getElementById("menu");
 
-function toggleMenu(){
+menuBtn.addEventListener("click", () => {
   menu.classList.toggle("show");
-}
-
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-document.addEventListener("click",function(e){
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-  }
 });
 </script>
 

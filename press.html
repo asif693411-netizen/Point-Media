@@ -4,130 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Press & Media Coverage | Point Media & Pointika</title>
-<meta name="description" content="Point Media and Pointika featured in international business and digital media publications. Founder Syed Asif Ali shares insights on ethical storytelling, branding, and digital growth.">
+<title>Press & Media Coverage | Point Media Authority Hub</title>
+<meta name="description" content="Official media mentions of Point Media and founder Syed Asif Ali. Featured on IPS News, TechBullion, Entrepreneurs Break, and Big News Network.">
 
 <link rel="canonical" href="https://pointmedia.link/press.html">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#0f172a;
-  color:#e5e7eb;
-  line-height:1.7;
-}
-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  background:#020617;
-  z-index:1000;
-  box-shadow:0 4px 20px rgba(0,0,0,0.5);
-}
-.nav-container{
-  max-width:1200px;
-  margin:auto;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  font-size:20px;
-  font-weight:bold;
-  color:#60a5fa;
-}
-.menu{
-  display:flex;
-  gap:25px;
-}
-.menu a{
-  color:#e5e7eb;
-  text-decoration:none;
-  font-size:15px;
-}
-.menu a:hover{color:#60a5fa;}
-.menu-btn{
-  display:none;
-  font-size:22px;
-  cursor:pointer;
-}
+:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; }
+body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+
+/* NAVIGATION */
+nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid var(--border);}
+.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:20px;font-weight:bold;color:var(--brand);letter-spacing:1px;}
+.menu{display:flex;gap:25px;}
+.menu a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;transition:0.3s;}
+.menu a:hover, .menu a.active{color:var(--brand);}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
+
 @media(max-width:768px){
-  .menu{
-    position:fixed;
-    top:60px;
-    right:-100%;
-    background:#020617;
-    flex-direction:column;
-    width:240px;
-    padding:20px;
-    height:100vh;
-    transition:0.3s;
-  }
+  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:30px;height:100vh;transition:0.3s;border-left:1px solid var(--border);}
   .menu.show{right:0;}
   .menu-btn{display:block;}
 }
-header{
-  background:linear-gradient(135deg,#1e3a8a,#0f172a);
-  padding:120px 20px 60px;
-  text-align:center;
-}
-header h1{margin:0;font-size:36px;color:#fff;}
+
+header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:140px 20px 80px;text-align:center;}
+header h1{margin:0;font-size:38px;color:#fff;}
 header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-}
-h2{color:#60a5fa;margin-bottom:20px;}
-.card{
-  background:#020617;
-  padding:30px;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-  margin-bottom:40px;
-}
-.press-list{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-.press-list div{
-  background:#020617;
-  padding:25px;
-  border-radius:12px;
-  border:1px solid #1e293b;
-}
-.press-list div a{
-  color:#60a5fa;
-  font-weight:bold;
-}
-.press-list div a:hover{text-decoration:underline;}
-footer{
-  background:#020617;
-  text-align:center;
-  padding:30px;
-  color:#94a3b8;
-  font-size:14px;
-}
+
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+h2{color:var(--brand);margin-bottom:25px;font-size:28px;}
+.card{background:var(--card);padding:35px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,0.5);margin-bottom:40px;border:1px solid var(--border);}
+
+.press-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
+.press-item{background:rgba(255,255,255,0.02);padding:30px;border-radius:15px;border:1px solid var(--border);transition:0.3s;display:flex;flex-direction:column;justify-content:space-between;}
+.press-item:hover{border-color:var(--brand);transform:translateY(-5px);background:rgba(96,165,250,0.05);}
+
+.source-tag{display:inline-block;font-size:12px;color:var(--brand);font-weight:bold;text-transform:uppercase;margin-bottom:10px;letter-spacing:1px;}
+.press-item h3{font-size:20px;margin:0 0 15px 0;line-height:1.4;}
+.press-item h3 a{color:#fff;text-decoration:none;transition:0.3s;}
+.press-item h3 a:hover{color:var(--brand);}
+.press-item p{font-size:15px;color:#94a3b8;margin-bottom:20px;}
+
+.read-more{font-size:14px;font-weight:bold;color:var(--brand);text-decoration:none;display:flex;align-items:center;gap:5px;}
+
+footer{background:#020617;text-align:center;padding:40px;color:#64748b;font-size:14px;border-top:1px solid var(--border);}
 </style>
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Point Media",
-  "url":"https://pointmedia.link",
-  "logo":"https://pointmedia.link/logo.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Syed Asif Ali",
-    "url":"https://syedasifali.link"
-  },
-  "sameAs":["https://pointika.link"],
-  "description":"Point Media featured in international business publications highlighting ethical digital media, storytelling, and brand strategy."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Point Media",
+      "url": "https://pointmedia.link",
+      "mainEntityOfPage": "https://pointmedia.link/press.html"
+    },
+    {
+      "@type": "NewsArticle",
+      "headline": "Syed Asif Ali on Building Credible Digital Media",
+      "author": {"@type": "Person", "name": "IPS News Editor"},
+      "publisher": {"@type": "Organization", "name": "IPS News"},
+      "url": "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/"
+    }
+  ]
 }
 </script>
 
@@ -136,8 +77,8 @@ footer{
 
 <nav>
   <div class="nav-container">
-    <div class="logo">Point Media</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="logo">POINT MEDIA</div>
+    <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -149,72 +90,83 @@ footer{
 </nav>
 
 <header>
-  <h1>Press & Media Coverage</h1>
-  <p>Independent media coverage featuring Point Media, Pointika, and founder Syed Asif Ali across global business and digital platforms.</p>
+  <h1>Authority & Media Mentions</h1>
+  <p>Point Media's global impact as featured in international business and technology publications.</p>
 </header>
 
 <section>
 
 <div class="card">
-<h2>Press Features & Interviews</h2>
+  <h2>Global Press Coverage</h2>
+  <div class="press-list">
 
-<div class="press-list">
+    <div class="press-item">
+      <div>
+        <span class="source-tag">IPS News</span>
+        <h3><a href="https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/" target="_blank">Building Credible Digital Media Through Ethics</a></h3>
+        <p>A deep dive into how Syed Asif Ali is redefining digital communications in the MENA region through ethical storytelling.</p>
+      </div>
+      <a href="https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/" class="read-more" target="_blank">Full Story ↗</a>
+    </div>
 
-<div>
-<a href="https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/" target="_blank">
-TechBullion — From Feature to Global Digital Media Growth
-</a>
-<p>An updated feature highlighting the growth journey of Syed Asif Ali and the evolution of Point Media since earlier coverage.</p>
+    <div class="press-item">
+      <div>
+        <span class="source-tag">TechBullion</span>
+        <h3><a href="https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/" target="_blank">From Feature to Global Digital Media Growth</a></h3>
+        <p>Exploring the evolution of Point Media from a startup vision to an international media brand.</p>
+      </div>
+      <a href="https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/" class="read-more" target="_blank">Full Story ↗</a>
+    </div>
+
+    <div class="press-item">
+      <div>
+        <span class="source-tag">Entrepreneurs Break</span>
+        <h3><a href="https://entrepreneursbreak.com/syed-asif-ali-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling.html" target="_blank">Vision, Strategy & Digital Leadership</a></h3>
+        <p>Exclusive interview on the strategic resilience required to build a digital ecosystem like Pointika.</p>
+      </div>
+      <a href="https://entrepreneursbreak.com/syed-asif-ali-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling.html" class="read-more" target="_blank">Full Story ↗</a>
+    </div>
+
+    <div class="press-item">
+      <div>
+        <span class="source-tag">Big News Network</span>
+        <h3><a href="https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller" target="_blank">Entrepreneur & Strategic Storyteller</a></h3>
+        <p>National recognition of Syed Asif Ali's role as a digital creator and strategic consultant.</p>
+      </div>
+      <a href="https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller" class="read-more" target="_blank">Full Story ↗</a>
+    </div>
+
+  </div>
 </div>
 
-<div>
-<a href="https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/" target="_blank">
-IPS News — Building Credible Digital Media Through Ethics
-</a>
-<p>An international perspective on ethical storytelling, media responsibility, and long-term digital credibility.</p>
-</div>
 
-<div>
-<a href="https://entrepreneursbreak.com/syed-asif-ali-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling.html" target="_blank">
-Entrepreneurs Break — Vision, Strategy & Digital Leadership
-</a>
-<p>A founder-focused article exploring strategy, resilience, and digital brand building.</p>
-</div>
-
-<div>
-<a href="https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller" target="_blank">
-Big News Network — Entrepreneur & Strategic Storyteller
-</a>
-<p>Coverage recognizing Syed Asif Ali as a digital creator and media strategist with global reach.</p>
-</div>
-
-</div>
-</div>
 
 <div class="card">
-<h2>Why Media Covers Point Media</h2>
-<ul>
-<li>Ethical digital storytelling and long-term credibility</li>
-<li>Transparent media practices and brand trust</li>
-<li>International visibility across business news platforms</li>
-<li>Founder-led vision with measurable digital growth</li>
-</ul>
+  <h2>Why Our Story Matters</h2>
+  <p>The media recognizes Point Media because we don't just create content; we build <strong>digital authority</strong>. Our focus on structured data, ethical narratives, and transparent communications has set a new standard in the industry.</p>
 </div>
 
 </section>
 
 <footer>
-© 2026 Point Media · Founded by Syed Asif Ali
+© 2026 Point Media · Strategic Global Communications · Founder: Syed Asif Ali
 </footer>
 
 <script>
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
 function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
+  menu.classList.toggle("show");
 }
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
 document.addEventListener("click",function(e){
-  const menu=document.getElementById("menu");
-  const btn=document.querySelector(".menu-btn");
-  if(!menu.contains(e.target)&&!btn.contains(e.target)){
+  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
     menu.classList.remove("show");
   }
 });

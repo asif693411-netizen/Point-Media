@@ -1,0 +1,39 @@
+# ==========================================================
+# Robots.txt for Point Media (Official)
+# Optimized for: https://pointmedia.link
+# Last Updated: January 2026
+# ==========================================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /founder.html
+Allow: /press.html
+Allow: /techbullion.html
+Allow: /contact.html
+Allow: /socials.html
+
+# Privacy and Security (Disallow sensitive folders)
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /scripts/*.php
+Disallow: /assets/css/*.map
+
+# Optimization for Search Engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap Link (Crucial for fast indexing)
+Sitemap: https://pointmedia.link/sitemap.xml
+
+# ==========================================================
+# End of Robots.txt

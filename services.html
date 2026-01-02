@@ -4,156 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Services | Point Media & Pointika</title>
-<meta name="description" content="Explore the digital media and branding services offered by Point Media and its sub-brand Pointika, founded by Syed Asif Ali. Professional social media management, content creation, and media strategy.">
+<title>Professional Digital Services | Point Media & Pointika</title>
+<meta name="description" content="Strategic digital media services by Point Media. From reputation management and media visibility to creative storytelling via Pointika. Founded by Syed Asif Ali.">
 
 <link rel="canonical" href="https://pointmedia.link/services.html">
 
 <style>
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:#0f172a;
-  color:#e5e7eb;
-  line-height:1.7;
-}
+:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; }
+body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
 
 /* NAVIGATION */
-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  background:#020617;
-  z-index:1000;
-  box-shadow:0 4px 20px rgba(0,0,0,0.5);
-}
-.nav-container{
-  max-width:1200px;
-  margin:auto;
-  padding:15px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  font-size:20px;
-  font-weight:bold;
-  color:#60a5fa;
-}
-.menu{
-  display:flex;
-  gap:25px;
-}
-.menu a{
-  color:#e5e7eb;
-  text-decoration:none;
-  font-size:15px;
-}
-.menu a:hover{color:#60a5fa;}
-.menu-btn{
-  display:none;
-  font-size:22px;
-  cursor:pointer;
-}
+nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid var(--border);}
+.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-size:20px;font-weight:bold;color:var(--brand);letter-spacing:1px;}
+.menu{display:flex;gap:25px;}
+.menu a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;transition:0.3s;}
+.menu a:hover, .menu a.active{color:var(--brand);}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
 
-/* MOBILE */
 @media(max-width:768px){
-  .menu{
-    position:fixed;
-    top:60px;
-    right:-100%;
-    background:#020617;
-    flex-direction:column;
-    width:240px;
-    padding:20px;
-    height:100vh;
-    transition:0.3s;
-  }
+  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:30px;height:100vh;transition:0.3s;border-left:1px solid var(--border);}
   .menu.show{right:0;}
   .menu-btn{display:block;}
 }
 
-/* HEADER */
-header{
-  background:linear-gradient(135deg,#1e3a8a,#0f172a);
-  padding:120px 20px 60px;
-  text-align:center;
-}
-header h1{margin:0;font-size:36px;color:#fff;}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;}
+header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:140px 20px 80px;text-align:center;}
+header h1{margin:0;font-size:38px;color:#fff;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
 
-section{
-  max-width:1100px;
-  margin:auto;
-  padding:60px 20px;
-}
-h2{color:#60a5fa;margin-bottom:20px;}
-.card{
-  background:#020617;
-  padding:30px;
-  border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);
-  margin-bottom:40px;
-}
-.service-list{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-}
-.service-list div{
-  background:#020617;
-  padding:25px;
-  border-radius:12px;
-  border:1px solid #1e293b;
-}
-footer{
-  background:#020617;
-  text-align:center;
-  padding:30px;
-  color:#94a3b8;
-  font-size:14px;
-}
-a{color:#60a5fa;text-decoration:none;}
-a:hover{text-decoration:underline;}
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+h2{color:var(--brand);margin-bottom:30px;font-size:28px;}
+.card{background:var(--card);padding:35px;border-radius:18px;box-shadow:0 10px 40px rgba(0,0,0,0.5);margin-bottom:40px;border:1px solid var(--border);}
+
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;}
+.service-item{background:rgba(255,255,255,0.02);padding:30px;border-radius:15px;border:1px solid var(--border);transition:0.3s;}
+.service-item:hover{border-color:var(--brand);transform:translateY(-5px);background:rgba(96,165,250,0.05);}
+.service-item h3{color:var(--brand);margin-bottom:15px;font-size:20px;}
+.service-item p{font-size:15px;color:#94a3b8;}
+
+.brand-badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-bottom:10px;font-weight:bold;letter-spacing:1px;}
+.bg-pointmedia{background:#1e3a8a;color:#fff;}
+.bg-pointika{background:#60a5fa;color:#000;}
+
+footer{background:#020617;text-align:center;padding:40px;color:#64748b;font-size:14px;border-top:1px solid var(--border);}
+a{color:var(--brand);text-decoration:none;}
 </style>
 
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"ProfessionalService",
-  "name":"Point Media",
-  "url":"https://pointmedia.link",
-  "logo":"https://pointmedia.link/logo.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Syed Asif Ali",
-    "url":"https://syedasifali.link",
-    "sameAs":[
-      "https://www.crunchbase.com/person/syed-asif-ali",
-      "https://www.linkedin.com/in/pointmedia",
-      "https://www.instagram.com/boxer_01101"
-    ]
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Digital Media & Communications",
+  "provider": {
+    "@type": "Organization",
+    "name": "Point Media",
+    "url": "https://pointmedia.link",
+    "founder": {
+        "@type": "Person",
+        "name": "Syed Asif Ali",
+        "url": "https://syedasifali.link"
+    }
   },
-  "areaServed":"Global",
-  "serviceType":["Digital Branding","Social Media Management","Content Creation","Media Visibility","Influencer Marketing","Strategic Storytelling"]
+  "areaServed": "Global",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Media Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reputation Management"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Strategic Storytelling"
+        }
+      }
+    ]
+  }
 }
 </script>
 
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-container">
-    <div class="logo">Point Media</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="logo">POINT MEDIA</div>
+    <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-<a href="founder.html" class="active">Founder</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="founder.html">Founder</a>
       <a href="press.html">Press</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -161,67 +108,86 @@ a:hover{text-decoration:underline;}
 </nav>
 
 <header>
-  <h1>Our Services</h1>
-  <p>Point Media & Pointika offer professional digital media services, helping brands, influencers, and individuals maximize online visibility and engagement.</p>
+  <h1>Strategic Media Services</h1>
+  <p>Comprehensive solutions for digital authority, brand growth, and ethical communications.</p>
 </header>
 
 <section>
 
 <div class="card">
-<h2>Core Services</h2>
-<div class="service-list">
-  <div>
-    <h3>Digital Branding</h3>
-    <p>Building and maintaining a credible online identity for individuals and businesses across multiple platforms.</p>
+  <h2>Our Core Expertise</h2>
+  <div class="service-list">
+    
+    <div class="service-item">
+      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
+      <h3>Digital Authority Building</h3>
+      <p>Establishing credible online identities through structured data, SEO, and entity-based brand positioning.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
+      <h3>Reputation Management</h3>
+      <p>Crafting and protecting the digital narratives of public figures, entrepreneurs, and global organizations.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="brand-badge bg-pointmedia">POINT MEDIA</span>
+      <h3>Media Visibility Strategy</h3>
+      <p>Securing high-impact placements and exposure across international digital press and media channels.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="brand-badge bg-pointika">POINTIKA</span>
+      <h3>Strategic Storytelling</h3>
+      <p>Converting brand values into compelling human stories that resonate with modern digital audiences.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="brand-badge bg-pointika">POINTIKA</span>
+      <h3>Content Ecosystems</h3>
+      <p>End-to-end production of platform-specific content designed for engagement and viral potential.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="brand-badge bg-pointika">POINTIKA</span>
+      <h3>Influencer Management</h3>
+      <p>Bridging the gap between brands and creators to build authentic, long-term digital partnerships.</p>
+    </div>
+
   </div>
-  <div>
-    <h3>Social Media Management</h3>
-    <p>End-to-end management of social media accounts, content scheduling, and growth strategies.</p>
-  </div>
-  <div>
-    <h3>Content Creation</h3>
-    <p>Professional content production including graphics, videos, and written media for engagement and outreach.</p>
-  </div>
-  <div>
-    <h3>Media Visibility</h3>
-    <p>Strategic exposure in digital platforms, press, and media channels to increase reach and credibility.</p>
-  </div>
-  <div>
-    <h3>Influencer Campaigns</h3>
-    <p>Collaborating with top influencers and managing campaigns that drive brand awareness and engagement.</p>
-  </div>
-  <div>
-    <h3>Strategic Storytelling</h3>
-    <p>Crafting compelling narratives for brands, public figures, and digital campaigns.</p>
-  </div>
-</div>
 </div>
 
 <div class="card">
-<h2>Why Choose Us</h2>
-<ul>
-<li>Founder-led team with direct supervision by Syed Asif Ali</li>
-<li>Experience with high-profile clients and top digital campaigns</li>
-<li>Global reach and multi-platform strategies</li>
-<li>Ethical and professional media management</li>
-<li>Proven track record in digital branding and online visibility</li>
-</ul>
+  <h2>Why Our Approach Works</h2>
+  <ul style="padding-left:20px; color:#94a3b8;">
+    <li><strong>Founder-Led Strategy:</strong> Every campaign is overseen by Syed Asif Ali's strategic vision.</li>
+    <li><strong>Data-Driven Narratives:</strong> We use Schema and SEO to ensure stories are not just told, but discovered.</li>
+    <li><strong>Global Network:</strong> Strong presence in the UAE and South Asia with a worldwide digital reach.</li>
+    <li><strong>Ethics First:</strong> A commitment to transparent and credible media practices.</li>
+  </ul>
 </div>
 
 </section>
 
 <footer>
-© 2025 Point Media · Founded by Syed Asif Ali  
+© 2026 Point Media · Digital Media Excellence · Founder: Syed Asif Ali  
 </footer>
 
 <script>
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
 function toggleMenu(){
-  document.getElementById("menu").classList.toggle("show");
+  menu.classList.toggle("show");
 }
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
 document.addEventListener("click",function(e){
-  const menu=document.getElementById("menu");
-  const btn=document.querySelector(".menu-btn");
-  if(!menu.contains(e.target)&&!btn.contains(e.target)){
+  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
     menu.classList.remove("show");
   }
 });

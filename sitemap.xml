@@ -28,4 +28,35 @@
   <url>
     <loc>https://point-media.link/press.html</loc>
     <lastmod>2026-01-02</lastmod>
-    <priority
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://point-media.link/services.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Socials Page -->
+  <url>
+    <loc>https://point-media.link/socials.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://point-media.link/about.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://point-media.link/contact.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

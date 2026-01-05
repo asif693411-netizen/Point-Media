@@ -2,160 +2,211 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Professional Digital Services | Point Media & Pointika</title>
-<meta name="description" content="Strategic digital media services by Point Media. From reputation management and media visibility to creative storytelling via Pointika. Founded by Syed Asif Ali.">
+<title>Strategic Services | Point Media & Pointika</title>
 
-<link rel="canonical" href="https://pointmedia.link/services.html">
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-:root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; --pointika:#38bdf8; }
-body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+:root { --neon: #00f2fe; --bg: #000; --accent: #7000ff; --pink: #f100ff; --pointika: #38bdf8; }
 
-/* NAVIGATION */
-nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-bottom:1px solid var(--border);}
-.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;}
-.logo{font-size:22px;font-weight:bold;color:var(--brand);letter-spacing:1px; text-decoration: none;}
-.menu{display:flex;gap:25px;}
-.menu a{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;transition:0.3s;}
-.menu a:hover, .menu a.active{color:var(--brand);}
-.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent; }
 
-@media(max-width:768px){
-  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:30px;height:100vh;transition:0.3s;border-left:1px solid var(--border);}
-  .menu.show{right:0;}
-  .menu-btn{display:block;}
+body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; width: 100%; }
+
+#particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: #000; }
+
+/* NAVIGATION BAR (HOME PAGE MATCHED) */
+.header-nav {
+    position: fixed; top: 0; width: 100%; z-index: 5000;
+    background: rgba(0,0,0,0.85); border-bottom: 1px solid rgba(255,255,255,0.05);
+    height: 70px; display: flex; align-items: center; backdrop-filter: blur(20px);
+}
+.nav-container { max-width:1400px; margin:0 auto; width:100%; display:flex; align-items:center; justify-content:space-between; padding:0 25px; }
+.logo-nav { font-family:'Orbitron'; font-size:0.9rem; font-weight:900; color:var(--neon); letter-spacing:3px; text-decoration:none; }
+
+.nav-menu { display: flex; gap: 20px; list-style: none; }
+.nav-menu a { text-decoration: none; color: #fff; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 2px; transition: 0.4s; opacity: 0.6; }
+.nav-menu a.active { opacity: 1; color: var(--neon); }
+
+/* ULTRA-COMPACT FLOATING MENU (HOME PAGE MATCHED) */
+.mobile-overlay {
+    position: fixed; top: 75px; right: -100%; 
+    width: auto; min-width: 150px; 
+    height: auto; padding: 12px 18px; 
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 12px;
+    z-index: 6000; display: flex; flex-direction: column; align-items: flex-start; 
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+.mobile-overlay.active { right: 15px; } 
+.mobile-overlay ul { list-style: none; width: 100%; }
+.mobile-overlay li { margin: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+.mobile-overlay a { font-family: 'Orbitron'; font-size: 0.75rem; color: #fff; text-decoration: none; letter-spacing: 2px; transition: 0.3s; display: block; }
+
+.menu-toggle { display: none; font-size: 20px; color: var(--neon); cursor: pointer; }
+
+/* ANIMATED SERVICES CONTENT */
+.services-section { position: relative; z-index: 10; padding: 120px 15px 60px; max-width: 1100px; margin: 0 auto; text-align: center; }
+.title-glow { font-family: 'Syncopate', sans-serif; font-size: clamp(1.5rem, 5vw, 3rem); margin-bottom: 10px; color: #fff; text-shadow: 0 0 20px var(--neon); opacity: 0; transform: translateY(-20px); }
+.sub-title { color: #94a3b8; font-size: 1.1rem; margin-bottom: 50px; font-weight: 300; opacity: 0; }
+
+.card-main { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 24px; padding: 45px 25px; backdrop-filter: blur(10px); opacity: 0; transform: translateY(30px); }
+h2 { font-family: 'Orbitron'; font-size: 1.6rem; color: var(--neon); margin-bottom: 35px; letter-spacing: 1px; }
+
+.service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+.service-item { 
+    background: rgba(255, 255, 255, 0.03); padding: 35px; border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.05); text-align: left; transition: 0.4s;
+    opacity: 0; transform: scale(0.9);
+}
+.service-item:hover { 
+    border-color: var(--neon); background: rgba(0, 242, 254, 0.1); 
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.2); 
 }
 
-header{background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);padding:150px 20px 80px;text-align:center;}
-header h1{margin:0;font-size:42px;color:#fff; letter-spacing: -1px;}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
+.brand-badge { display: inline-block; font-size: 9px; padding: 4px 12px; border-radius: 50px; margin-bottom: 15px; font-weight: 900; font-family: 'Orbitron'; }
+.bg-pointmedia { background: rgba(0, 242, 254, 0.1); color: var(--neon); border: 1px solid var(--neon); }
+.bg-pointika { background: rgba(56, 189, 248, 0.1); color: var(--pointika); border: 1px solid var(--pointika); }
 
-section{max-width:1100px;margin:auto;padding:60px 20px;}
-h2{color:var(--brand);margin-bottom:30px;font-size:32px; letter-spacing: -1px;}
-.card{background:var(--card);padding:45px;border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,0.5);border:1px solid var(--border);margin-bottom:40px;}
+.service-item i { font-size: 28px; color: var(--pink); margin-bottom: 20px; display: block; }
+.service-item h3 { font-family: 'Orbitron'; font-size: 1.3rem; color: #fff; margin-bottom: 15px; }
+.service-item p { font-size: 0.95rem; color: #94a3b8; font-weight: 300; line-height: 1.7; }
 
-.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
-.service-item{background:rgba(255,255,255,0.02);padding:35px;border-radius:20px;border:1px solid var(--border);transition:0.3s; position: relative; overflow: hidden;}
-.service-item:hover{border-color:var(--brand);transform:translateY(-8px);background:rgba(96,165,250,0.05);}
-.service-item i { font-size: 30px; color: var(--brand); margin-bottom: 20px; display: block; }
-.service-item h3{color:#fff; margin-bottom:15px;font-size:22px;}
-.service-item p{font-size:15px;color:#94a3b8;}
+/* CTA BOX ANIMATION */
+.cta-box { margin-top: 50px; padding: 60px 20px; border: 1px solid rgba(0, 242, 254, 0.2); border-radius: 24px; opacity: 0; }
+.cta-btn { 
+    display: inline-block; background: var(--neon); color: #000; padding: 15px 45px; 
+    border-radius: 50px; text-decoration: none; font-family: 'Orbitron'; font-size: 11px; 
+    font-weight: 900; transition: 0.3s; margin-top: 25px;
+    animation: pulseBtn 2s infinite ease-in-out;
+}
+@keyframes pulseBtn {
+    0%, 100% { box-shadow: 0 0 5px var(--neon); transform: scale(1); }
+    50% { box-shadow: 0 0 25px var(--neon); transform: scale(1.05); }
+}
 
-.brand-badge{display:inline-block;font-size:10px;padding:4px 12px;border-radius:50px;margin-bottom:15px;font-weight:bold;letter-spacing:1px; text-transform: uppercase;}
-.bg-pointmedia{background:rgba(96,165,250,0.15);color:var(--brand); border: 1px solid var(--brand);}
-.bg-pointika{background:rgba(56,189,248,0.15);color:var(--pointika); border: 1px solid var(--pointika);}
+footer { text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-size: 0.7rem; color: #444; letter-spacing: 3px; border-top: 1px solid rgba(255,255,255,0.05); }
 
-/* CTA SECTION */
-.cta-box { text-align: center; padding: 60px 20px; background: linear-gradient(rgba(30,58,138,0.3), rgba(11,13,18,1)); border-radius: 24px; border: 1px solid var(--border); margin-top: 40px; }
-.cta-btn { background: var(--brand); color: #000; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; transition: 0.3s; margin-top: 20px; }
-.cta-btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(96,165,250,0.3); }
-
-footer{background:#020617;text-align:center;padding:50px 20px;color:#64748b;font-size:14px;border-top:1px solid var(--border);}
+@media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; } }
 </style>
-
 </head>
 <body>
 
-<nav>
+<div id="particles-js"></div>
+
+<nav class="header-nav">
   <div class="nav-container">
-    <a href="index.html" class="logo">POINT MEDIA</a>
-    <div class="menu-btn" id="menu-btn">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="founder.html">Founder</a>
-      <a href="press.html">Press</a>
-      <a href="contact.html">Contact</a>
-    </div>
+    <a href="index.html" class="logo-nav">POINT MEDIA</a>
+    <ul class="nav-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html" class="active">SERVICES</a></li>
+        <li><a href="founder.html">FOUNDER</a></li>
+        <li><a href="press.html">PRESS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <div class="menu-toggle" id="openMenu"><i class="fas fa-bars"></i></div>
   </div>
 </nav>
 
-<header>
-  <h1>Strategic Media Services</h1>
-  <p>Comprehensive solutions for digital authority, brand growth, and ethical communications.</p>
-</header>
-
-<section>
-
-
-
-<div class="card">
-  <h2>Our Expertise</h2>
-  <div class="service-list">
-
-    <div class="service-item">
-      <span class="brand-badge bg-pointmedia">Corporate Strategy</span>
-      <i class="fas fa-shield-alt"></i>
-      <h3>Reputation Management</h3>
-      <p>Crafting and protecting the digital narratives of public figures, entrepreneurs, and global organizations with precision.</p>
-    </div>
-
-    <div class="service-item">
-      <span class="brand-badge bg-pointmedia">Growth</span>
-      <i class="fas fa-chart-line"></i>
-      <h3>Media Visibility Strategy</h3>
-      <p>Securing high-impact placements and organic authority across international digital press and media channels.</p>
-    </div>
-
-    <div class="service-item">
-      <span class="brand-badge bg-pointika">Creative</span>
-      <i class="fas fa-pen-nib"></i>
-      <h3>Strategic Storytelling</h3>
-      <p>Converting brand values into compelling human stories that resonate and drive engagement via Pointika.</p>
-    </div>
-
-    <div class="service-item">
-      <span class="brand-badge bg-pointika">Influence</span>
-      <i class="fas fa-users"></i>
-      <h3>Influencer Management</h3>
-      <p>Bridging the gap between brands and world-class creators to build authentic, long-term digital partnerships.</p>
-    </div>
-
-  </div>
+<div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="founder.html">FOUNDER</a></li>
+        <li><a href="press.html">PRESS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
 </div>
 
-<div class="cta-box">
-  <h2>Ready to Build Your Digital Legacy?</h2>
-  <p>Consult with Syed Asif Ali for a customized digital media strategy.</p>
-  <a href="contact.html" class="cta-btn">Start Your Consultation</a>
-</div>
+<section class="services-section">
+    <div class="header-area">
+        <h1 class="title-glow" id="main-title">STRATEGIC SERVICES</h1>
+        <p class="sub-title" id="sub-title">Comprehensive solutions for digital authority, brand growth, and ethical communications.</p>
+    </div>
 
+    <div class="card-main" id="service-card">
+        <h2>OUR EXPERTISE</h2>
+        <div class="service-list">
+
+            <div class="service-item">
+                <span class="brand-badge bg-pointmedia">CORPORATE STRATEGY</span>
+                <i class="fas fa-shield-alt"></i>
+                <h3>Reputation Management</h3>
+                <p>Crafting and protecting the digital narratives of public figures, entrepreneurs, and global organizations with precision.</p>
+            </div>
+
+            <div class="service-item">
+                <span class="brand-badge bg-pointmedia">GROWTH</span>
+                <i class="fas fa-chart-line"></i>
+                <h3>Media Visibility Strategy</h3>
+                <p>Securing high-impact placements and organic authority across international digital press and media channels.</p>
+            </div>
+
+            <div class="service-item">
+                <span class="brand-badge bg-pointika">CREATIVE</span>
+                <i class="fas fa-pen-nib"></i>
+                <h3>Strategic Storytelling</h3>
+                <p>Converting brand values into compelling human stories that resonate and drive engagement via Pointika.</p>
+            </div>
+
+            <div class="service-item">
+                <span class="brand-badge bg-pointika">INFLUENCE</span>
+                <i class="fas fa-users"></i>
+                <h3>Influencer Management</h3>
+                <p>Bridging the gap between brands and world-class creators to build authentic, long-term digital partnerships.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cta-box" id="cta-box">
+        <h2 style="font-family:'Orbitron'; color:#fff;">READY TO BUILD YOUR DIGITAL LEGACY?</h2>
+        <p style="color:#888;">Consult with Syed Asif Ali for a customized digital media strategy.</p>
+        <a href="contact.html" class="cta-btn">START YOUR CONSULTATION</a>
+    </div>
 </section>
 
-<footer>
-© 2026 Point Media · Digital Media Excellence · Founder: Syed Asif Ali  
-</footer>
+<footer>© 2026 POINT MEDIA • DIGITAL MEDIA EXCELLENCE • FOUNDER: SYED ASIF ALI</footer>
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script>
-  const menuBtn = document.getElementById("menu-btn");
-  const menu = document.getElementById("menu");
-
-  menuBtn.addEventListener("click", (e) => {
-    e.stopPropagation(); 
-    menu.classList.toggle("show");
-    menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
-  });
-
-  document.addEventListener("click", (e) => {
-    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-      menu.classList.remove("show");
-      menuBtn.textContent = "☰";
-    }
-  });
-
-  const menuLinks = menu.querySelectorAll("a");
-  menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("show");
-      menuBtn.textContent = "☰";
+    // Particles Logic
+    particlesJS('particles-js', {
+        "particles": { "number": { "value": 80 }, "color": { "value": "#00f2fe" }, "opacity": { "value": 0.25 }, "size": { "value": 2 }, "line_linked": { "enable": true, "distance": 150, "color": "#00f2fe", "opacity": 0.2 }, "move": { "enable": true, "speed": 1.5 } }
     });
-  });
-</script>
 
+    // GSAP ENTRANCE ANIMATIONS (ROBOTIC FEEL)
+    window.onload = () => {
+        const tl = gsap.timeline();
+        tl.to("#main-title", { opacity: 1, y: 0, duration: 1, ease: "power4.out" })
+          .to("#sub-title", { opacity: 1, duration: 1 }, "-=0.5")
+          .to("#service-card", { opacity: 1, y: 0, duration: 1.2 }, "-=0.7")
+          .to(".service-item", { opacity: 1, scale: 1, duration: 0.6, stagger: 0.2, ease: "back.out(1.7)" }, "-=0.5")
+          .to("#cta-box", { opacity: 1, duration: 1 }, "-=0.2");
+    };
+
+    // Navigation Logic (Home Page Matched)
+    const openBtn = document.getElementById('openMenu');
+    const overlay = document.getElementById('mobileOverlay');
+
+    openBtn.onclick = (e) => {
+        e.stopPropagation();
+        overlay.classList.toggle('active');
+        openBtn.innerHTML = overlay.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    };
+
+    document.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        openBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+</script>
 
 </body>
 </html>

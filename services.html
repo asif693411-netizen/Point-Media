@@ -6,7 +6,7 @@
 
 <title>Strategic Services | Point Media & Pointika</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;500;700&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -16,6 +16,7 @@
 
 body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; width: 100%; }
 
+/* PARTICLES BACKGROUND */
 #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: #000; }
 
 /* NAVIGATION BAR (HOME PAGE MATCHED) */
@@ -29,7 +30,7 @@ body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-se
 
 .nav-menu { display: flex; gap: 20px; list-style: none; }
 .nav-menu a { text-decoration: none; color: #fff; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 2px; transition: 0.4s; opacity: 0.6; }
-.nav-menu a.active { opacity: 1; color: var(--neon); }
+.nav-menu a.active { opacity: 1; color: var(--neon); text-shadow: 0 0 10px var(--neon); }
 
 /* ULTRA-COMPACT FLOATING MENU (HOME PAGE MATCHED) */
 .mobile-overlay {
@@ -49,47 +50,62 @@ body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-se
 
 .menu-toggle { display: none; font-size: 20px; color: var(--neon); cursor: pointer; }
 
-/* ANIMATED SERVICES CONTENT */
+/* SERVICES CONTENT - PRESERVING ORIGINAL STRUCTURE */
 .services-section { position: relative; z-index: 10; padding: 120px 15px 60px; max-width: 1100px; margin: 0 auto; text-align: center; }
-.title-glow { font-family: 'Syncopate', sans-serif; font-size: clamp(1.5rem, 5vw, 3rem); margin-bottom: 10px; color: #fff; text-shadow: 0 0 20px var(--neon); opacity: 0; transform: translateY(-20px); }
+
+.title-glow { 
+    font-family: 'Syncopate', sans-serif; font-size: clamp(1.8rem, 6vw, 3.2rem); 
+    margin-bottom: 10px; color: #fff; text-shadow: 0 0 25px var(--neon); 
+    opacity: 0; transform: translateY(-30px);
+}
 .sub-title { color: #94a3b8; font-size: 1.1rem; margin-bottom: 50px; font-weight: 300; opacity: 0; }
 
-.card-main { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 24px; padding: 45px 25px; backdrop-filter: blur(10px); opacity: 0; transform: translateY(30px); }
-h2 { font-family: 'Orbitron'; font-size: 1.6rem; color: var(--neon); margin-bottom: 35px; letter-spacing: 1px; }
+.card-main { 
+    background: rgba(255, 255, 255, 0.02); 
+    border: 1px solid rgba(0, 242, 254, 0.15); 
+    border-radius: 24px; padding: 45px 25px; 
+    backdrop-filter: blur(15px); opacity: 0; transform: translateY(40px);
+}
+h2 { font-family: 'Syne'; font-weight: 800; font-size: 1.6rem; color: var(--neon); margin-bottom: 35px; letter-spacing: 1px; }
 
 .service-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
 .service-item { 
     background: rgba(255, 255, 255, 0.03); padding: 35px; border-radius: 20px; 
-    border: 1px solid rgba(255, 255, 255, 0.05); text-align: left; transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.05); text-align: left; 
+    transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
     opacity: 0; transform: scale(0.9);
 }
 .service-item:hover { 
-    border-color: var(--neon); background: rgba(0, 242, 254, 0.1); 
-    box-shadow: 0 0 25px rgba(0, 242, 254, 0.2); 
+    border-color: var(--neon); background: rgba(0, 242, 254, 0.08); 
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 242, 254, 0.15); 
 }
 
-.brand-badge { display: inline-block; font-size: 9px; padding: 4px 12px; border-radius: 50px; margin-bottom: 15px; font-weight: 900; font-family: 'Orbitron'; }
+.brand-badge { 
+    display: inline-block; font-size: 9px; padding: 4px 12px; border-radius: 50px; 
+    margin-bottom: 15px; font-weight: 900; font-family: 'Orbitron'; letter-spacing: 1px;
+}
 .bg-pointmedia { background: rgba(0, 242, 254, 0.1); color: var(--neon); border: 1px solid var(--neon); }
 .bg-pointika { background: rgba(56, 189, 248, 0.1); color: var(--pointika); border: 1px solid var(--pointika); }
 
-.service-item i { font-size: 28px; color: var(--pink); margin-bottom: 20px; display: block; }
-.service-item h3 { font-family: 'Orbitron'; font-size: 1.3rem; color: #fff; margin-bottom: 15px; }
+.service-item i { font-size: 28px; color: var(--pink); margin-bottom: 20px; display: block; filter: drop-shadow(0 0 5px var(--pink)); }
+.service-item h3 { font-family: 'Syne'; font-weight: 700; font-size: 1.4rem; color: #fff; margin-bottom: 15px; }
 .service-item p { font-size: 0.95rem; color: #94a3b8; font-weight: 300; line-height: 1.7; }
 
 /* CTA BOX ANIMATION */
 .cta-box { margin-top: 50px; padding: 60px 20px; border: 1px solid rgba(0, 242, 254, 0.2); border-radius: 24px; opacity: 0; }
 .cta-btn { 
     display: inline-block; background: var(--neon); color: #000; padding: 15px 45px; 
-    border-radius: 50px; text-decoration: none; font-family: 'Orbitron'; font-size: 11px; 
-    font-weight: 900; transition: 0.3s; margin-top: 25px;
-    animation: pulseBtn 2s infinite ease-in-out;
+    border-radius: 50px; text-decoration: none; font-family: 'Syne'; font-size: 11px; 
+    font-weight: 800; transition: 0.3s; margin-top: 25px;
+    animation: pulseBtn 2.5s infinite ease-in-out;
 }
 @keyframes pulseBtn {
     0%, 100% { box-shadow: 0 0 5px var(--neon); transform: scale(1); }
-    50% { box-shadow: 0 0 25px var(--neon); transform: scale(1.05); }
+    50% { box-shadow: 0 0 30px var(--neon); transform: scale(1.05); }
 }
 
-footer { text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-size: 0.7rem; color: #444; letter-spacing: 3px; border-top: 1px solid rgba(255,255,255,0.05); }
+footer { text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-size: 0.75rem; color: #555; letter-spacing: 4px; border-top: 1px solid rgba(255,255,255,0.05); }
 
 @media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; } }
 </style>
@@ -166,9 +182,9 @@ footer { text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-s
     </div>
 
     <div class="cta-box" id="cta-box">
-        <h2 style="font-family:'Orbitron'; color:#fff;">READY TO BUILD YOUR DIGITAL LEGACY?</h2>
+        <h2 style="font-family:'Syne'; font-weight:800; color:#fff;">READY TO BUILD YOUR DIGITAL LEGACY?</h2>
         <p style="color:#888;">Consult with Syed Asif Ali for a customized digital media strategy.</p>
-        <a href="contact.html" class="cta-btn">START YOUR CONSULTATION</a>
+        <a href="contact.html" class="cta-btn">START CONSULTATION</a>
     </div>
 </section>
 
@@ -179,20 +195,20 @@ footer { text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-s
 <script>
     // Particles Logic
     particlesJS('particles-js', {
-        "particles": { "number": { "value": 80 }, "color": { "value": "#00f2fe" }, "opacity": { "value": 0.25 }, "size": { "value": 2 }, "line_linked": { "enable": true, "distance": 150, "color": "#00f2fe", "opacity": 0.2 }, "move": { "enable": true, "speed": 1.5 } }
+        "particles": { "number": { "value": 90 }, "color": { "value": "#00f2fe" }, "opacity": { "value": 0.2 }, "size": { "value": 2 }, "line_linked": { "enable": true, "distance": 150, "color": "#00f2fe", "opacity": 0.15 }, "move": { "enable": true, "speed": 1.2 } }
     });
 
-    // GSAP ENTRANCE ANIMATIONS (ROBOTIC FEEL)
+    // GSAP ROBOTIC ENTRANCE
     window.onload = () => {
         const tl = gsap.timeline();
-        tl.to("#main-title", { opacity: 1, y: 0, duration: 1, ease: "power4.out" })
-          .to("#sub-title", { opacity: 1, duration: 1 }, "-=0.5")
-          .to("#service-card", { opacity: 1, y: 0, duration: 1.2 }, "-=0.7")
-          .to(".service-item", { opacity: 1, scale: 1, duration: 0.6, stagger: 0.2, ease: "back.out(1.7)" }, "-=0.5")
-          .to("#cta-box", { opacity: 1, duration: 1 }, "-=0.2");
+        tl.to("#main-title", { opacity: 1, y: 0, duration: 1.2, ease: "expo.out" })
+          .to("#sub-title", { opacity: 1, duration: 1 }, "-=0.7")
+          .to("#service-card", { opacity: 1, y: 0, duration: 1.2, ease: "power4.out" }, "-=0.8")
+          .to(".service-item", { opacity: 1, scale: 1, duration: 0.8, stagger: 0.2, ease: "power2.out" }, "-=0.5")
+          .to("#cta-box", { opacity: 1, duration: 1.2 }, "-=0.3");
     };
 
-    // Navigation Logic (Home Page Matched)
+    // Navigation Menu Logic (Home Matched)
     const openBtn = document.getElementById('openMenu');
     const overlay = document.getElementById('mobileOverlay');
 

@@ -2,21 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Home Page -->
   <url>
     <loc>https://point-media.link/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2026-01-06</lastmod>
+    <priority>1.00</priority>
     <image:image>
       <image:loc>https://point-media.link/logo.png</image:loc>
-      <image:caption>Point Media Logo</image:caption>
+      <image:caption>Point Media Logo - Strategic Digital Agency</image:caption>
     </image:image>
   </url>
 
-  <!-- Founder Page -->
   <url>
     <loc>https://point-media.link/founder.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://point-media.link/profile.jpg</image:loc>
@@ -24,45 +22,33 @@
     </image:image>
   </url>
 
-  <!-- TechBullion Page -->
-  <url>
-    <loc>https://point-media.link/techbullion.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- Press Page -->
   <url>
     <loc>https://point-media.link/press.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.90</priority>
   </url>
 
-  <!-- Services Page -->
   <url>
-    <loc>https://point-media.link/services.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://point-media.link/socials.html</loc>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.85</priority>
   </url>
 
-  <!-- Socials Page -->
   <url>
-    <loc>https://point-media.link/socials.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <loc>https://point-media.link/services.html</loc>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- About Page -->
   <url>
     <loc>https://point-media.link/about.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- Contact Page -->
   <url>
     <loc>https://point-media.link/contact.html</loc>
-    <lastmod>2026-01-02</lastmod>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.70</priority>
   </url>
 

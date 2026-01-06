@@ -4,22 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Contact Point Media | Global Inquiries</title>
+<title>Contact Point Media | Global Inquiries & Strategic Consultation</title>
+<meta name="description" content="Get in touch with Point Media for strategic communications and reputation management. Official hub for Syed Asif Ali's global digital operations.">
+
+<link rel="canonical" href="https://point-media.link/contact.html" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://point-media.link/contact.html",
+      "name": "Contact Point Media",
+      "description": "Official contact page for Point Media global inquiries.",
+      "mainEntity": {
+        "@type": "Organization",
+        "@id": "https://point-media.link/#organization",
+        "name": "Point Media",
+        "url": "https://point-media.link",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+971-52-715-7894",
+          "contactType": "customer service",
+          "email": "info@syedasifali.link",
+          "availableLanguage": ["English", "Urdu", "Arabic"]
+        }
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://syedasifali.link/#person",
+      "name": "Syed Asif Ali",
+      "url": "https://syedasifali.link",
+      "sameAs": [
+        "https://www.instagram.com/boxer_01101",
+        "https://www.tiktok.com/@pointika.media",
+        "https://www.linkedin.com/in/pointmedia",
+        "https://x.com/Boxer_01101"
+      ]
+    }
+  ]
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;500;700&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 :root { --neon: #00f2fe; --bg: #000; --accent: #7000ff; --pink: #f100ff; --whatsapp: #25D366; }
-
 * { margin:0; padding:0; box-sizing:border-box; -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent; }
-
 body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; width: 100%; }
 
 /* PARTICLES BACKGROUND */
 #particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: #000; }
 
-/* NAVIGATION BAR (HOME PAGE MATCHED) */
+/* NAVIGATION BAR */
 .header-nav {
     position: fixed; top: 0; width: 100%; z-index: 5000;
     background: rgba(0,0,0,0.85); border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -28,12 +68,10 @@ body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-se
 .nav-container { max-width:1400px; margin:0 auto; width:100%; display:flex; align-items:center; justify-content:space-between; padding:0 25px; }
 .logo-nav { font-family:'Orbitron'; font-size:0.9rem; font-weight:900; color:var(--neon); letter-spacing:3px; text-decoration:none; }
 
-/* DESKTOP MENU */
 .nav-menu { display: flex; gap: 20px; list-style: none; }
 .nav-menu a { text-decoration: none; color: #fff; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 2px; transition: 0.4s; opacity: 0.6; }
 .nav-menu a.active { opacity: 1; color: var(--neon); }
 
-/* ULTRA-COMPACT FLOATING MENU (HOME PAGE MATCHED) */
 .mobile-overlay {
     position: fixed; top: 75px; right: -100%; 
     width: auto; min-width: 150px; 
@@ -45,56 +83,30 @@ body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-se
     transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 }
 .mobile-overlay.active { right: 15px; } 
-
 .mobile-overlay ul { list-style: none; width: 100%; }
 .mobile-overlay li { margin: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
 .mobile-overlay a { font-family: 'Orbitron'; font-size: 0.75rem; color: #fff; text-decoration: none; letter-spacing: 2px; transition: 0.3s; display: block; }
-
 .menu-toggle { display: none; font-size: 20px; color: var(--neon); cursor: pointer; }
 
-/* CONTACT CONTENT ANIMATION */
+/* CONTENT SECTION */
 .contact-section { position: relative; z-index: 10; padding: 120px 15px 60px; max-width: 1000px; margin: 0 auto; text-align: center; }
-
-.title-glow { 
-    font-family: 'Syncopate', sans-serif; font-size: clamp(1.8rem, 6vw, 3.5rem); 
-    margin-bottom: 50px; color: #fff; text-shadow: 0 0 30px rgba(0, 242, 254, 0.4); 
-    opacity: 0; transform: translateY(40px) scale(0.95);
-}
-
+.title-glow { font-family: 'Syncopate', sans-serif; font-size: clamp(1.8rem, 6vw, 3.5rem); margin-bottom: 50px; color: #fff; text-shadow: 0 0 30px rgba(0, 242, 254, 0.4); opacity: 0; transform: translateY(40px) scale(0.95); }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
-
-.card { 
-    background: rgba(255, 255, 255, 0.02); 
-    border: 1px solid rgba(0, 242, 254, 0.15); 
-    border-radius: 24px; padding: 40px 30px; 
-    backdrop-filter: blur(15px); 
-    opacity: 0; transform: translateY(50px);
-}
+.card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 24px; padding: 40px 30px; backdrop-filter: blur(15px); opacity: 0; transform: translateY(50px); }
 .card:hover { border-color: var(--neon); transform: translateY(-10px); background: rgba(255, 255, 255, 0.05); }
 
 h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--neon); margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase; }
 p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 20px; font-weight: 300; }
 
-.wa-btn { 
-    display: inline-flex; align-items: center; gap: 12px; background: var(--whatsapp); color: #fff; 
-    padding: 14px 30px; border-radius: 50px; text-decoration: none; font-family: 'Syne'; 
-    font-size: 11px; font-weight: 800; text-transform: uppercase; transition: 0.4s;
-}
+.wa-btn { display: inline-flex; align-items: center; gap: 12px; background: var(--whatsapp); color: #fff; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-family: 'Syne'; font-size: 11px; font-weight: 800; text-transform: uppercase; transition: 0.4s; }
 .wa-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--whatsapp); }
 
 .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 25px; }
-.social-item { 
-    display: flex; align-items: center; gap: 12px; padding: 18px; 
-    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); 
-    border-radius: 16px; text-decoration: none; color: #fff; 
-    font-family: 'Syne'; font-size: 11px; font-weight: 700; 
-    letter-spacing: 1px; opacity: 0; transform: scale(0.8);
-}
+.social-item { display: flex; align-items: center; gap: 12px; padding: 18px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; text-decoration: none; color: #fff; font-family: 'Syne'; font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0; transform: scale(0.8); }
 .social-item:hover { background: var(--accent); color: #fff; border-color: var(--neon); transform: translateY(-5px); }
 .social-item i { font-size: 20px; color: var(--neon); }
 
 footer { position: relative; z-index: 10; text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-size: 0.7rem; color: #444; letter-spacing: 4px; border-top: 1px solid rgba(255,255,255,0.05); }
-
 @media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; } }
 </style>
 </head>
@@ -128,18 +140,18 @@ footer { position: relative; z-index: 10; text-align: center; padding: 60px 20px
 
 <section class="contact-section">
     <h1 class="title-glow" id="animate-title">CONNECT WITH US</h1>
-    
+
     <div class="contact-grid">
         <div class="card animate-card">
             <h2>OFFICIAL INQUIRY</h2>
             <p>info@syedasifali.link</p>
             <a href="https://syedasifali.link" target="_blank" style="color: var(--neon); text-decoration: none; font-size: 12px; font-family: 'Syne'; font-weight: 700;">FOUNDER HUB →</a>
         </div>
-        
+
         <div class="card animate-card">
             <h2>INSTANT PULSE</h2>
             <p>+971 52 715 7894</p>
-            <a href="https://wa.me/971527157894" class="wa-btn"><i class="fab fa-whatsapp"></i> CHAT ON WHATSAPP</a>
+            <a href="https://wa.me/971527157894" class="wa-cta"><i class="fab fa-whatsapp"></i> CHAT ON WHATSAPP</a>
         </div>
     </div>
 
@@ -187,6 +199,5 @@ footer { position: relative; z-index: 10; text-align: center; padding: 60px 20px
         openBtn.innerHTML = '<i class="fas fa-bars"></i>';
     });
 </script>
-
 </body>
 </html>

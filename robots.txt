@@ -1,11 +1,9 @@
 # ==========================================================
 # Robots.txt for Point Media (Official)
 # Optimized for: https://point-media.link
-# Last Updated: January 6, 2026
 # ==========================================================
 
 User-agent: *
-# Allow public pages
 Allow: /
 Allow: /index.html
 Allow: /about.html
@@ -15,30 +13,16 @@ Allow: /press.html
 Allow: /contact.html
 Allow: /socials.html
 
-# Allow Assets for Knowledge Panel
-Allow: /logo.png
-Allow: /profile.jpg
-Allow: /favicon.ico
-
-# Block TechBullion and sensitive folders
+# Block TechBullion from Indexing
 Disallow: /techbullion.html
+
+# Privacy and Security
 Disallow: /admin/
 Disallow: /config/
 Disallow: /private/
-Disallow: /temp/
-Disallow: /scripts/*.php
-Disallow: /assets/css/*.map
 
-# Optimization for Googlebot (No delay for faster indexing)
+# Optimization for Googlebot
 User-agent: Googlebot
 Disallow: /techbullion.html
 
-# Optimization for Bing
-User-agent: Bingbot
-Crawl-delay: 1
-
-# Correct Sitemap Link
 Sitemap: https://point-media.link/sitemap.xml
-
-# ==========================================================
-# End of Robots.txt

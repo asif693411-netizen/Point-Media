@@ -14,35 +14,42 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://point-media.link/#organization",
+      "name": "Point Media",
+      "url": "https://point-media.link",
+      "logo": "https://point-media.link/logo.png",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://syedasifali.link/#person",
+        "name": "Syed Asif Ali",
+        "url": "https://syedasifali.link",
+        "image": "https://syedasifali.link/profile.jpg",
+        "jobTitle": "Founder & Digital Media Entrepreneur",
+        "sameAs": [
+          "https://www.instagram.com/syedasifaliofficial",
+          "https://www.tiktok.com/@pointika.media",
+          "https://www.youtube.com/@AsifAli-Digital",
+          "https://www.linkedin.com/in/pointmedia",
+          "https://x.com/Boxer_01101",
+          "https://www.crunchbase.com/person/syed-asif-ali"
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971-52-715-7894",
+        "contactType": "customer service",
+        "email": "info@syedasifali.link",
+        "availableLanguage": ["English", "Urdu", "Arabic"]
+      }
+    },
+    {
       "@type": "ContactPage",
       "@id": "https://point-media.link/contact.html",
       "name": "Contact Point Media",
       "description": "Official contact page for Point Media global inquiries.",
-      "mainEntity": {
-        "@type": "Organization",
-        "@id": "https://point-media.link/#organization",
-        "name": "Point Media",
-        "url": "https://point-media.link",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+971-52-715-7894",
-          "contactType": "customer service",
-          "email": "info@syedasifali.link",
-          "availableLanguage": ["English", "Urdu", "Arabic"]
-        }
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://syedasifali.link/#person",
-      "name": "Syed Asif Ali",
-      "url": "https://syedasifali.link",
-      "sameAs": [
-        "https://www.instagram.com/boxer_01101",
-        "https://www.tiktok.com/@pointika.media",
-        "https://www.linkedin.com/in/pointmedia",
-        "https://x.com/Boxer_01101"
-      ]
+      "url": "https://point-media.link/contact.html",
+      "mainEntity": { "@id": "https://point-media.link/#organization" }
     }
   ]
 }
@@ -98,8 +105,8 @@ body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-se
 h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--neon); margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase; }
 p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 20px; font-weight: 300; }
 
-.wa-btn { display: inline-flex; align-items: center; gap: 12px; background: var(--whatsapp); color: #fff; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-family: 'Syne'; font-size: 11px; font-weight: 800; text-transform: uppercase; transition: 0.4s; }
-.wa-btn:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--whatsapp); }
+.wa-btn, .wa-cta { display: inline-flex; align-items: center; gap: 12px; background: var(--whatsapp); color: #fff; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-family: 'Syne'; font-size: 11px; font-weight: 800; text-transform: uppercase; transition: 0.4s; }
+.wa-btn:hover, .wa-cta:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--whatsapp); }
 
 .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 25px; }
 .social-item { display: flex; align-items: center; gap: 12px; padding: 18px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; text-decoration: none; color: #fff; font-family: 'Syne'; font-size: 11px; font-weight: 700; letter-spacing: 1px; opacity: 0; transform: scale(0.8); }
@@ -107,7 +114,7 @@ p { font-size: 1.1rem; color: rgba(255,255,255,0.7); margin-bottom: 20px; font-w
 .social-item i { font-size: 20px; color: var(--neon); }
 
 footer { position: relative; z-index: 10; text-align: center; padding: 60px 20px; font-family: 'Orbitron'; font-size: 0.7rem; color: #444; letter-spacing: 4px; border-top: 1px solid rgba(255,255,255,0.05); }
-@media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; } }
+@media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; }
 </style>
 </head>
 <body>
@@ -159,7 +166,7 @@ footer { position: relative; z-index: 10; text-align: center; padding: 60px 20px
         <h2>DIGITAL ECOSYSTEM</h2>
         <div class="social-grid">
             <a href="https://www.linkedin.com/in/pointmedia" class="social-item"><i class="fab fa-linkedin"></i> LINKEDIN</a>
-            <a href="https://www.instagram.com/boxer_01101" class="social-item"><i class="fab fa-instagram"></i> INSTAGRAM</a>
+            <a href="https://www.instagram.com/syedasifaliofficial" class="social-item"><i class="fab fa-instagram"></i> INSTAGRAM</a>
             <a href="https://x.com/Boxer_01101" class="social-item"><i class="fab fa-twitter"></i> TWITTER / X</a>
             <a href="https://www.youtube.com/@AsifAli-Digital" class="social-item"><i class="fab fa-youtube"></i> YOUTUBE</a>
             <a href="https://www.tiktok.com/@pointika.media" class="social-item"><i class="fab fa-tiktok"></i> TIKTOK</a>

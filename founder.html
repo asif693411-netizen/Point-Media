@@ -7,7 +7,7 @@
 <title>Founder — Syed Asif Ali | Point Media & Pointika</title>
 <meta name="description" content="Syed Asif Ali, the visionary founder behind Point Media and Pointika. Leading strategic media growth and digital reputation management globally.">
 
-<link rel="canonical" href="https://pointmedia.link/founder.html" />
+<link rel="canonical" href="https://point-media.link/founder.html" />
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,76 +22,86 @@
       "name": "Syed Asif Ali",
       "url": "https://syedasifali.link",
       "image": "https://syedasifali.link/profile.jpg",
-      "jobTitle": "Founder & Digital Media Strategist",
-      "description": "Founder of Point Media and Pointika, specializing in digital reputation management and strategic storytelling.",
+      "jobTitle": "Founder & Digital Media Entrepreneur",
+      "description": "Founder of Point Media and Pointika, specializing in digital reputation management and strategic media growth.",
       "sameAs": [
         "https://www.linkedin.com/in/pointmedia",
-        "https://www.instagram.com/boxer_01101",
+        "https://www.instagram.com/syedasifaliofficial",
         "https://x.com/Boxer_01101",
-        "https://www.crunchbase.com/person/syed-asif-ali",
-        "https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/"
+        "https://www.youtube.com/@AsifAli-Digital",
+        "https://www.tiktok.com/@pointika.media",
+        "https://www.crunchbase.com/person/syed-asif-ali"
       ]
     },
     {
       "@type": "Organization",
-      "@id": "https://pointmedia.link/#organization",
+      "@id": "https://point-media.link/#organization",
       "name": "Point Media",
-      "url": "https://pointmedia.link",
+      "url": "https://point-media.link",
+      "logo": "https://point-media.link/logo.png",
       "founder": { "@id": "https://syedasifali.link/#person" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://point-media.link/founder.html",
+      "name": "Founder — Syed Asif Ali",
+      "description": "Official founder page of Syed Asif Ali, visionary behind Point Media and Pointika.",
+      "url": "https://point-media.link/founder.html",
+      "mainEntity": { "@id": "https://syedasifali.link/#person" }
     }
   ]
 }
 </script>
 
 <style>
-:root { --neon: #00f2fe; --bg: #000; --accent: #7000ff; --pink: #f100ff; --whatsapp: #25D366; }
-* { margin:0; padding:0; box-sizing:border-box; -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent; }
-body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; width: 100%; }
+:root { --neon: #00f2fe; --bg: #000; --accent: #7000ff; --pink: #f100ff; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
 
-#particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: #000; }
+#particles-js { position: fixed; top:0; left:0; width:100%; height:100%; z-index:1; background:#000; }
 
-.header-nav { position: fixed; top: 0; width: 100%; z-index: 5000; background: rgba(0,0,0,0.85); border-bottom: 1px solid rgba(255,255,255,0.05); height: 70px; display: flex; align-items: center; backdrop-filter: blur(20px); }
+.header-nav { position: fixed; top:0; width:100%; z-index:5000; background: rgba(0,0,0,0.85); border-bottom:1px solid rgba(255,255,255,0.05); height:70px; display:flex; align-items:center; backdrop-filter:blur(20px); }
 .nav-container { max-width:1400px; margin:0 auto; width:100%; display:flex; align-items:center; justify-content:space-between; padding:0 25px; }
 .logo-nav { font-family:'Orbitron'; font-size:0.9rem; font-weight:900; color:var(--neon); letter-spacing:3px; text-decoration:none; }
-.nav-menu { display: flex; gap: 20px; list-style: none; }
-.nav-menu a { text-decoration: none; color: #fff; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 2px; transition: 0.4s; opacity: 0.6; }
-.nav-menu a.active { opacity: 1; color: var(--neon); }
+.nav-menu { display:flex; gap:20px; list-style:none; }
+.nav-menu a { text-decoration:none; color:#fff; font-family:'Orbitron'; font-size:10px; letter-spacing:2px; transition:0.4s; opacity:0.6; }
+.nav-menu a.active { opacity:1; color:var(--neon); }
 
-.mobile-overlay { position: fixed; top: 75px; right: -100%; width: auto; min-width: 150px; height: auto; padding: 12px 18px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 12px; z-index: 6000; display: flex; flex-direction: column; align-items: flex-start; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1); }
-.mobile-overlay.active { right: 15px; } 
-.mobile-overlay ul { list-style: none; width: 100%; }
-.mobile-overlay li { margin: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
-.mobile-overlay a { font-family: 'Orbitron'; font-size: 0.75rem; color: #fff; text-decoration: none; letter-spacing: 2px; transition: 0.3s; display: block; }
-.menu-toggle { display: none; font-size: 20px; color: var(--neon); cursor: pointer; }
+.mobile-overlay { position:fixed; top:75px; right:-100%; width:auto; min-width:150px; padding:12px 18px; background:rgba(255,255,255,0.03); backdrop-filter:blur(25px); border:1px solid rgba(0,242,254,0.3); border-radius:12px; z-index:6000; display:flex; flex-direction:column; align-items:flex-start; transition:0.4s cubic-bezier(0.175,0.885,0.32,1.1); }
+.mobile-overlay.active { right:15px; } 
+.mobile-overlay ul { list-style:none; width:100%; }
+.mobile-overlay li { margin:8px 0; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:5px; }
+.mobile-overlay a { font-family:'Orbitron'; font-size:0.75rem; color:#fff; text-decoration:none; letter-spacing:2px; display:block; }
+.menu-toggle { display:none; font-size:20px; color:var(--neon); cursor:pointer; }
 
-.founder-section { position: relative; z-index: 10; padding: 120px 15px 60px; max-width: 800px; margin: 0 auto; text-align: center; }
-header h1 { font-family: 'Syncopate', sans-serif; font-size: clamp(1.8rem, 5vw, 3rem); margin-bottom: 10px; color: #fff; text-shadow: 0 0 20px var(--neon); }
-header p { color: var(--neon); font-family: 'Orbitron'; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 40px; opacity: 0.8; }
+.founder-section { position:relative; z-index:10; padding:120px 15px 60px; max-width:800px; margin:0 auto; text-align:center; }
+header h1 { font-family:'Syncopate', sans-serif; font-size:clamp(1.8rem,5vw,3rem); margin-bottom:10px; color:#fff; text-shadow:0 0 20px var(--neon); }
+header p { color:var(--neon); font-family:'Orbitron'; font-size:0.9rem; letter-spacing:2px; margin-bottom:40px; opacity:0.8; }
 
-.profile-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 242, 254, 0.15); border-radius: 24px; padding: 50px 30px; backdrop-filter: blur(10px); }
+.profile-card { background: rgba(255,255,255,0.02); border:1px solid rgba(0,242,254,0.15); border-radius:24px; padding:50px 30px; backdrop-filter:blur(10px); }
 
-.profile-portal { position: relative; width: 180px; height: 180px; margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; }
-.portal-ring { position: absolute; width: 100%; height: 100%; border: 2px solid transparent; border-top-color: var(--neon); border-bottom-color: var(--pink); border-radius: 50%; animation: rotatePortal 4s linear infinite; filter: drop-shadow(0 0 10px var(--neon)); }
-@keyframes rotatePortal { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-.profile-img { width: 75%; height: 75%; object-fit: cover; border-radius: 50%; filter: drop-shadow(0 0 15px var(--neon)); z-index: 2; }
+.profile-portal { position:relative; width:180px; height:180px; margin:0 auto 30px; display:flex; align-items:center; justify-content:center; }
+.portal-ring { position:absolute; width:100%; height:100%; border:2px solid transparent; border-top-color:var(--neon); border-bottom-color:var(--pink); border-radius:50%; animation:rotatePortal 4s linear infinite; filter:drop-shadow(0 0 10px var(--neon)); }
+@keyframes rotatePortal { from {transform:rotate(0deg);} to {transform:rotate(360deg);} }
+.profile-img { width:75%; height:75%; object-fit:cover; border-radius:50%; filter:drop-shadow(0 0 15px var(--neon)); z-index:2; }
 
-.content-text { font-size: 1.1rem; color: #ccc; margin-bottom: 30px; line-height: 1.7; font-weight: 300; }
+.content-text { font-size:1.1rem; color:#ccc; margin-bottom:30px; line-height:1.7; font-weight:300; }
 
-.verification-box { background: rgba(0, 242, 254, 0.05); border: 1px dashed var(--neon); padding: 25px; border-radius: 15px; margin: 30px 0; text-align: left; }
-.verification-box h4 { color: var(--neon); font-family: 'Orbitron'; font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
-.verification-box p { font-size: 0.9rem; color: #888; font-style: italic; margin: 0; line-height: 1.6; }
+.verification-box { background: rgba(0,242,254,0.05); border:1px dashed var(--neon); padding:25px; border-radius:15px; margin:30px 0; text-align:left; }
+.verification-box h4 { color:var(--neon); font-family:'Orbitron'; font-size:15px; margin-bottom:10px; display:flex; align-items:center; gap:10px; }
+.verification-box p { font-size:0.9rem; color:#888; font-style:italic; line-height:1.6; margin:0; }
 
-.portfolio-hub { background: linear-gradient(135deg, rgba(0, 242, 254, 0.1) 0%, rgba(112, 0, 255, 0.05) 100%); border: 1px solid var(--neon); border-radius: 20px; padding: 30px; margin: 40px 0; text-align: center; display: block; text-decoration: none; color: inherit; transition: 0.3s; }
-.portfolio-hub:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2); }
-.hub-btn { display: inline-block; background: var(--neon); color: #000; padding: 12px 30px; border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 13px; margin-top: 15px; font-family: 'Orbitron'; }
+.portfolio-hub { background: linear-gradient(135deg, rgba(0,242,254,0.1) 0%, rgba(112,0,255,0.05) 100%); border:1px solid var(--neon); border-radius:20px; padding:30px; margin:40px 0; text-align:center; display:block; text-decoration:none; color:inherit; transition:0.3s; }
+.portfolio-hub:hover { transform:translateY(-5px); box-shadow:0 10px 30px rgba(0,242,254,0.2); }
+.hub-btn { display:inline-block; background:var(--neon); color:#000; padding:12px 30px; border-radius:50px; font-weight:bold; text-transform:uppercase; font-size:13px; margin-top:15px; font-family:'Orbitron'; }
 
-.social { display: flex; gap: 15px; justify-content: center; margin-top: 30px; }
-.social a { width: 45px; height: 45px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1); }
-.social a:hover { background: var(--neon); color: #000; transform: translateY(-5px); box-shadow: 0 0 15px var(--neon); }
+.social { display:flex; gap:15px; justify-content:center; margin-top:30px; flex-wrap:wrap; }
+.social a { width:45px; height:45px; background:rgba(255,255,255,0.05); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; transition:0.3s; border:1px solid rgba(255,255,255,0.1); }
+.social a:hover { background:var(--neon); color:#000; transform:translateY(-5px); box-shadow:0 0 15px var(--neon); }
 
-footer { position: relative; z-index: 10; text-align: center; padding: 40px; font-family: 'Orbitron'; font-size: 0.65rem; color: #444; letter-spacing: 3px; }
+footer { text-align:center; padding:40px; font-family:'Orbitron'; font-size:0.65rem; color:#444; letter-spacing:3px; }
 
-@media (max-width: 968px) { .nav-menu { display: none; } .menu-toggle { display: block; } }
+@media (max-width:968px) { .nav-menu { display:none; } .menu-toggle { display:block; } }
 </style>
 </head>
 <body>
@@ -136,11 +146,11 @@ footer { position: relative; z-index: 10; text-align: center; padding: 40px; fon
             <img src="https://syedasifali.link/profile.jpg" alt="Syed Asif Ali" class="profile-img">
         </div>
 
-        <p class="content-text"><strong>Syed Asif Ali</strong> is the visionary entrepreneur leading Point Media and Pointika.</p>
+        <p class="content-text"><strong>Syed Asif Ali</strong> is the visionary entrepreneur leading Point Media and Pointika, shaping global digital media strategies.</p>
 
         <div class="verification-box">
             <h4><i class="fas fa-shield-alt"></i> Official Identity Verification</h4>
-            <p>Syed Asif Ali is a professional business entity. This official profile and his associated ventures are independent and distinct from any other social media creators with similar names.</p>
+            <p>This official founder profile confirms Syed Asif Ali as the authentic entrepreneur behind Point Media and Pointika, distinct from any other profiles with similar names.</p>
         </div>
 
         <a href="https://syedasifali.link" target="_blank" class="portfolio-hub">
@@ -151,8 +161,10 @@ footer { position: relative; z-index: 10; text-align: center; padding: 40px; fon
 
         <div class="social">
             <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/syedasifaliofficial" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
     </div>
 </section>

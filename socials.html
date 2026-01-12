@@ -9,30 +9,6 @@
 <link rel="canonical" href="https://point-media.link/socials.html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://syedasifali.link/#person",
-  "name": "Syed Asif Ali",
-  "url": "https://syedasifali.link",
-  "sameAs": [
-    "https://www.linkedin.com/in/pointmedia",
-    "https://www.instagram.com/syedasifaliofficial",
-    "https://www.tiktok.com/@pointika.media",
-    "https://www.youtube.com/@AsifAli-Digital",
-    "https://x.com/Boxer_01101",
-    "https://medium.com/@asif693411",
-    "https://www.crunchbase.com/person/syed-asif-ali"
-  ],
-  "jobTitle": "Founder",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Point Media"
-  }
-}
-</script>
-
 <style>
 :root{ --brand:#60a5fa; --bg:#0b0d12; --card:#111827; --border:#1e293b; --text:#e5e7eb; --pointika: #38bdf8; }
 body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
@@ -44,8 +20,13 @@ nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;border-botto
 .menu{display:flex;gap:20px;}
 .menu a{color:var(--text);text-decoration:none;font-size:14px;font-weight:500;transition:0.3s;}
 .menu a:hover{color:var(--brand);}
+.menu-toggle{display:none;font-size:22px;color:var(--brand);cursor:pointer;}
 
-@media(max-width:768px){ .menu{display:none;} }
+@media(max-width:768px){ 
+  .menu{display:none; flex-direction:column; position:absolute; top:60px; right:0; background:var(--bg); width:200px; padding:10px; border:1px solid var(--border); border-radius:8px; display:none;}
+  .menu.active{display:flex;}
+  .menu-toggle{display:block;}
+}
 
 /* HEADER */
 header.hero{padding:120px 20px 30px;text-align:center;background:radial-gradient(circle at top, #1e3a8a 0%, #0b0d12 100%);}
@@ -91,7 +72,8 @@ footer{text-align:center;padding:40px 20px;color:#64748b;font-size:13px;border-t
 <nav>
   <div class="nav-container">
     <a href="index.html" class="logo">POINT MEDIA</a>
-    <div class="menu">
+    <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+    <div class="menu" id="mobileMenu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="founder.html">Founder</a>
@@ -143,6 +125,14 @@ footer{text-align:center;padding:40px 20px;color:#64748b;font-size:13px;border-t
 <footer>
   © 2026 Syed Asif Ali · Building Digital Legacies
 </footer>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>

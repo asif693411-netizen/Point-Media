@@ -3,106 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 <title>Point Media — Global Digital Authority</title>
 <meta name="description" content="Point Media is a premier global strategic media and reputation management agency, redefining digital authority for public figures and businesses worldwide. Founder: Syed Asif Ali.">
-
 <link rel="canonical" href="https://point-media.link/" />
-
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- AdSense Script Added -->
+<!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3358769888695953"
      crossorigin="anonymous"></script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://point-media.link/#organization",
-      "name": "Point Media",
-      "url": "https://point-media.link/",
-      "logo": "https://point-media.link/logo.png",
-      "description": "Point Media is a digital media and strategic communications company focused on authority building, brand credibility, and narrative-driven growth. Founded by Syed Asif Ali.",
-      "founder": {
-        "@type": "Person",
-        "@id": "https://syedasifali.link/#person",
-        "name": "Syed Asif Ali",
-        "url": "https://syedasifali.link",
-        "jobTitle": "Founder & Digital Strategist"
-      },
-      "sameAs": [
-        "https://www.crunchbase.com/organization/point-media-473a",
-        "https://www.facebook.com/share/17ZmMkCAB4/",
-        "https://www.wikidata.org/wiki/Q137724014",
-        "https://www.manilatimes.net/2026/01/09/tmt-newswire/plentisoft/syed-asif-ali-scales-digital-media-operations-in-the-united-arab-emirates-through-point-media-and-pointika/2255897",
-        "https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/",
-        "https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller",
-        "https://www.bbntimes.com/society/why-digital-trust-has-become-a-social-issue-a-conversation-with-syed-asif-ali",
-        "https://www.outlookindia.com/hub4business/how-syed-asif-ali-is-redefining-digital-authority-and-identity-engineering-in-the-uae",
-        "https://ipsnews.net/business/2026/01/06/syed-asif-ali-redefining-brand-storytelling-in-digital-transformation/",
-        "https://www.digitaljournal.com/pr/news/vehement-media/syed-asif-ali-digital-media-148099701.html",
-        "https://www.streetinsider.com/dr/news.php?id=25815791",
-        "https://www.mexc.com/en-GB/news/387586",
-        "https://www.mexc.com/en-GB/news/387587"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://pointika.link/#organization",
-      "name": "Pointika",
-      "url": "https://pointika.link/",
-      "logo": "https://pointika.link/logo.png",
-      "description": "Pointika is the official digital storytelling and media platform under Point Media, focused on creative influence, content production, and strategic media campaigns. Founded by Syed Asif Ali.",
-      "founder": { "@id": "https://syedasifali.link/#person" },
-      "parentOrganization": { "@id": "https://point-media.link/#organization" },
-      "sameAs": [
-        "https://www.crunchbase.com/organization/pointika",
-        "https://www.facebook.com/share/1Bsk8JrL49/",
-        "https://www.tiktok.com/@pointika"
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://syedasifali.link/#person",
-      "name": "Syed Asif Ali",
-      "url": "https://syedasifali.link",
-      "jobTitle": "Founder & Digital Strategist",
-      "sameAs": [
-        "https://www.linkedin.com/in/syedasifali",
-        "https://www.crunchbase.com/person/syed-asif-ali",
-        "https://syedasifali.link"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://point-media.link/#website",
-      "url": "https://point-media.link/",
-      "name": "Point Media",
-      "publisher": { "@id": "https://point-media.link/#organization" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://point-media.link/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-  ]
-}
-</script>
 
 <style>
 /* Original CSS untouched */
 :root { --neon: #00f2fe; --bg: #000; --accent: #7000ff; --pink: #f100ff; --whatsapp: #25D366; }
 
-/* ... rest of the CSS unchanged ... */
+* { margin:0; padding:0; box-sizing:border-box; -webkit-user-select:none; user-select:none; -webkit-tap-highlight-color:transparent; }
+
+body { background: var(--bg); color: #fff; font-family: 'Space Grotesk', sans-serif; overflow: hidden; height: 100vh; width: 100vw; }
+
+.ambience-layer {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 15% 20%, rgba(0, 242, 254, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 85% 80%, rgba(112, 0, 255, 0.15) 0%, transparent 45%);
+    z-index: 0; pointer-events: none;
+}
+
+/* NAVIGATION BAR */
+.header-nav {
+    position: fixed; top: 0; width: 100%; z-index: 5000;
+    background: rgba(0,0,0,0.85); border-bottom: 1px solid rgba(255,255,255,0.05);
+    height: 70px; display: flex; align-items: center; backdrop-filter: blur(20px);
+}
+.nav-container { max-width:1400px; margin:0 auto; width:100%; display:flex; align-items:center; justify-content:space-between; padding:0 25px; }
+.logo-nav { font-family:'Orbitron'; font-size:0.9rem; font-weight:900; color:var(--neon); letter-spacing:3px; text-decoration:none; }
+
+/* DESKTOP MENU */
+.nav-menu { display: flex; gap: 20px; list-style: none; }
+.nav-menu a { text-decoration: none; color: #fff; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 2px; transition: 0.4s; opacity: 0.6; }
+.nav-menu a:hover { opacity: 1; color: var(--neon); }
+
+/* ULTRA-COMPACT FLOATING MENU (MOBILE) */
+.mobile-overlay {
+    position: fixed; top: 75px; right: -100%;   
+    width: auto;   
+    min-width: 150px;   
+    height: auto; padding: 12px 18px;   
+    background: rgba(255, 255, 255, 0.03);   
+    backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 12px;  
+    z-index: 6000; display: flex; flex-direction: column; align-items: flex-start;   
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);  
+}
+.mobile-overlay.active { right: 15px; }   
+
+.mobile-overlay ul { list-style: none; width: 100%; }
+.mobile-overlay li { margin: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+.mobile-overlay a { font-family: 'Orbitron'; font-size: 0.75rem; color: #fff; text-decoration: none; letter-spacing: 2px; transition: 0.3s; display: block; }
+.mobile-overlay a:hover { color: var(--neon); padding-left: 3px; }
+
+.menu-toggle { display: none; font-size: 20px; color: var(--neon); cursor: pointer; }
+
+/* UI ELEMENTS */
+.ui-layer { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; z-index: 10; padding: 20px; }
+.logo-portal { position: relative; width: 110px; height: 110px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center; }
+.portal-ring { position: absolute; width: 100%; height: 100%; border: 2px solid transparent; border-top-color: var(--neon); border-bottom-color: var(--pink); border-radius: 50%; animation: rotatePortal 4s linear infinite; }
+@keyframes rotatePortal { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.logo-portal img { width: 70%; height: 70%; object-fit: contain; border-radius: 50%; filter: drop-shadow(0 0 15px var(--neon)); z-index: 2; }
+
+#digital-clock { font-family: 'Orbitron'; font-size: 0.8rem; color: var(--neon); margin-bottom: 15px; opacity: 0.7; letter-spacing: 3px; }
+
+.title-container { display: flex; flex-wrap: nowrap; gap: clamp(4px, 1.2vw, 8px); margin-bottom: 10px; justify-content: center; width: 100%; }
+.letter { font-family: 'Syncopate', sans-serif; font-size: clamp(1.1rem, 5.5vw, 3.8rem); letter-spacing: -1px; color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); opacity: 0; display: inline-block; }
+.letter.active { color: #fff; -webkit-text-stroke: 0px; text-shadow: 0 0 15px var(--neon), 0 0 30px var(--accent); opacity: 1; }
+
+.robot-arm { position: fixed; top: 0; width: 2px; height: 100vh; background: linear-gradient(to bottom, transparent, var(--neon), var(--pink), transparent); box-shadow: 0 0 25px var(--neon); pointer-events: none; opacity: 0; z-index: 100; }
+
+.sub-header { font-family: 'Orbitron'; font-size: 0.65rem; background: linear-gradient(90deg, var(--neon), var(--pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 8px; font-weight: 900; margin-top: 15px; opacity: 0; }
+.info-box { margin-top: 35px; text-align: center; max-width: 500px; opacity: 0; padding: 0 15px; }
+.desc { color: #888; font-size: 0.9rem; line-height: 1.8; margin-bottom: 30px; }
+
+.wa-cta { display: inline-flex; align-items: center; gap: 10px; padding: 14px 35px; background: linear-gradient(45deg, var(--accent), var(--neon)); color: #fff; text-decoration: none; border-radius: 50px; font-family: 'Orbitron'; font-size: 9px; font-weight: 900; transition: 0.5s; }
+
+@media (max-width: 968px) {
+    .nav-menu { display: none; }
+    .menu-toggle { display: block; }
+}
 </style>
 </head>
 <body>
-
-<!-- Body content unchanged -->
 <div class="ambience-layer"></div>
 <div class="robot-arm" id="laser-arm"></div>
 
@@ -150,41 +138,40 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script>
-    const openBtn = document.getElementById('openMenu');
-    const overlay = document.getElementById('mobileOverlay');
+const openBtn = document.getElementById('openMenu');
+const overlay = document.getElementById('mobileOverlay');
 
-    openBtn.onclick = (e) => {
-        e.stopPropagation();
-        overlay.classList.toggle('active');
-        openBtn.innerHTML = overlay.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-    };
+openBtn.onclick = (e) => {
+    e.stopPropagation();
+    overlay.classList.toggle('active');
+    openBtn.innerHTML = overlay.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+};
 
-    document.addEventListener('click', () => {
-        overlay.classList.remove('active');
-        openBtn.innerHTML = '<i class="fas fa-bars"></i>';
+document.addEventListener('click', () => {
+    overlay.classList.remove('active');
+    openBtn.innerHTML = '<i class="fas fa-bars"></i>';
+});
+
+function updateClock() {
+    document.getElementById('digital-clock').textContent = new Date().toLocaleTimeString();
+}
+setInterval(updateClock, 1000); updateClock();
+
+window.onload = () => {
+    const letters = document.querySelectorAll('.letter');
+    const laser = document.getElementById('laser-arm');
+    const tl = gsap.timeline();
+    tl.to(laser, { opacity: 1, duration: 0.1 });
+    letters.forEach((char) => {
+        const rect = char.getBoundingClientRect();
+        tl.to(laser, { left: rect.left + (rect.width/2), duration: 0.14, ease: "none" })
+          .set(char, { className: "letter active" })
+          .to(char, { y: -5, duration: 0.08, yoyo: true, repeat: 1 });
     });
-
-    function updateClock() {
-        document.getElementById('digital-clock').textContent = new Date().toLocaleTimeString();
-    }
-    setInterval(updateClock, 1000); updateClock();
-
-    window.onload = () => {
-        const letters = document.querySelectorAll('.letter');
-        const laser = document.getElementById('laser-arm');
-        const tl = gsap.timeline();
-        tl.to(laser, { opacity: 1, duration: 0.1 });
-        letters.forEach((char) => {
-            const rect = char.getBoundingClientRect();
-            tl.to(laser, { left: rect.left + (rect.width/2), duration: 0.14, ease: "none" })
-              .set(char, { className: "letter active" })
-              .to(char, { y: -5, duration: 0.08, yoyo: true, repeat: 1 });
-        });
-        tl.to(laser, { opacity: 0, duration: 0.4 });
-        tl.to("#sub-tag", { opacity: 1, duration: 1.2 }, "-=0.2");
-        tl.to("#content-box", { opacity: 1, y: -5, duration: 1.2 }, "-=0.8");
-    };
+    tl.to(laser, { opacity: 0, duration: 0.4 });
+    tl.to("#sub-tag", { opacity: 1, duration: 1.2 }, "-=0.2");
+    tl.to("#content-box", { opacity: 1, y: -5, duration: 1.2 }, "-=0.8");
+};
 </script>
-
 </body>
 </html>

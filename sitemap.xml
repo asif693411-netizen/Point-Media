@@ -3,8 +3,8 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://point-media.link/index.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <loc>https://point-media.link/</loc>
+    <lastmod>2026-01-17</lastmod>
     <priority>1.00</priority>
     <image:image>
       <image:loc>https://point-media.link/logo.png</image:loc>
@@ -14,7 +14,7 @@
 
   <url>
     <loc>https://point-media.link/founder.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.95</priority>
     <image:image>
       <image:loc>https://point-media.link/profile.jpg</image:loc>
@@ -24,31 +24,31 @@
 
   <url>
     <loc>https://point-media.link/press.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://point-media.link/socials.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://point-media.link/services.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://point-media.link/about.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://point-media.link/contact.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <priority>0.70</priority>
   </url>
 </urlset>
